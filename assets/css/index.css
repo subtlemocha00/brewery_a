@@ -1,0 +1,116 @@
+:root {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+	--main-a: #ca0000;
+	--main-b: #313131;
+	--main-c: #dcb000;
+	--main-d: #808080;
+	--main-e: #d7f6ff;
+	--main-e-rgb:  215, 246, 255;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+a {
+	text-decoration: none;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
+
+.bg-a {
+	background-color: var(--main-a);
+}
+.bg-b {
+	background-color: var(--main-b);
+}
+.text-c {
+	color: var(--main-c);
+}
+
+.text-outline {
+	text-shadow: -2px -2px #141414, 2px 2px #141414, -2px 2px #141414, 2px -2px #141414;
+}
+
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.customCarousel {
+    height: 40vh;
+}
+
+.carousel-inner {
+	height: 100%;
+}
+
+.carousel-item {
+	height: 100%;
+}
+
+.carousel-item img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.img-fit {
+	/* height: 100%; */
+	width: 100%;
+	object-fit: cover;
+}
+
+@media (min-width: 576px) {
+	.customCarousel {
+		height: 50vh;
+	}
+	
+}
+@media (min-width: 992px) {
+	.customCarousel {
+		height: 75vh;
+	}
+	
+}
