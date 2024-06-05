@@ -5,11 +5,9 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>SIP NATION</title>
-	<!-- <link rel="preload" as="image" href="./assets/images/landingBackground.webp" /> -->
-	<!-- <link rel="icon" href="./assets/icons/logo_fav.svg" type="image/x-icon" /> -->
 	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="./assets/css/index.css" />
-	<!-- <link rel="stylesheet" href="./assets/css/indexDark.css" /> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script src="https://kit.fontawesome.com/56b718db2c.js" crossorigin="anonymous"></script>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -152,95 +150,80 @@
 		<div class="bg-b w-100 text-center mb-5">
 			<h2 class="fw-bold p-4 m-0">Brews</h2>
 		</div>
-		<div class="container">
-			<div id="carouselHighlights" class="carousel slide d-md-none" data-bs-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="card border-0 p-0 m-1 m-md-0 bg-transparent">
-							<img src="./assets/images/three_cans_a.png" alt="Hair Colouring"
-								class="card-img-top img-fit">
-							<div class="card-body">
-								<div class="card-title fw-bold">Hair Colouring</div>
-								<p class="card-text">Hair colouring adds vibrancy and dimension to your look. Whether
-									you want a subtle change or a bold new color, our skilled colorists provide
-									personalized services to achieve your desired shade.</p>
-							</div>
-							<a href="./services.html" class="stretched-link"></a>
+		<!-- Swiper -->
+		<div class="swiper mySwiper container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide border-0 p-0 m-1 m-md-0 bg-transparent d-flex flex-column align-items-center">
+					<div class="list-unstyled card border-0 p-0 m-1 m-md-0 bg-transparent">
+						<div class="">
+							<img height="400" src="./assets/images/three_cans_a.png" alt="Hair Colouring"
+								class="img-fit">
+							<div class="fw-bold">Hair Colouring</div>
+							<span class="">$3.40 per can</span>
 						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card border-0 p-0 m-1 m-md-0 bg-transparent">
-							<img src="./assets/images/three_cans_b.png" alt="Skin Treatment"
-								class="card-img-top img-fit">
-							<div class="card-body">
-								<div class="card-title fw-bold">Skin Treatment</div>
-								<p class="card-text">Skin treatments rejuvenate and refresh your complexion. Our range
-									of treatments, from facials to peels, are designed to address your specific skin
-									concerns and leave you glowing.</p>
-							</div>
-							<a href="./services.html" class="stretched-link"></a>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card border-0 p-0 m-1 m-md-0 bg-transparent">
-							<img src="./assets/images/three_cans_c.png" alt="Manicures and Pedicures"
-								class="card-img-top img-fit">
-							<div class="card-body">
-								<div class="card-title fw-bold">Manicures and Pedicures</div>
-								<p class="card-text">Manicures and pedicures enhance the beauty and health of your
-									nails. Our expert technicians provide detailed care, ensuring your hands and feet
-									look and feel their best.</p>
-							</div>
-							<a href="./services.html" class="stretched-link"></a>
-						</div>
+						<!-- <a href="#" class="stretched-link"></a> -->
 					</div>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-					data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
-
-			<div class="row justify-content-around d-none d-md-flex text-center">
-				<div class="col-12 col-md-4 card border-0 p-0 m-1 m-md-0 bg-transparent">
-					<img src="./assets/images/three_cans_a.png" alt="Hair Colouring" class="card-img-top img-fit">
-					<div class="card-body">
-						<div class="card-title fw-bold">Hair Colouring</div>
-						<p class="card-text">Hair colouring adds vibrancy and dimension to your look. Whether you want a
-							subtle change or a bold new color, our skilled colorists provide personalized services to
-							achieve your desired shade.</p>
+				<div
+					class="swiper-slide card border-0 p-0 m-1 m-md-0 bg-transparent d-flex flex-column align-items-center">
+					<div class="list-unstyled card border-0 p-0 m-1 m-md-0 bg-transparent">
+						<img height="400" src="./assets/images/three_cans_b.png" alt="Skin Treatment" class="img-fit">
+						<!-- <div class="card-body"> -->
+						<div class="fw-bold">Skin Treatment</div>
+						<span class="card-text">$5.35 per can</span>
+						<!-- </div> -->
+						<!-- <a href="#" class="stretched-link"></a> -->
 					</div>
-					<a href="./services.html" class="stretched-link"></a>
 				</div>
-				<div class="col-12 col-md-4 card border-0 p-0 m-1 m-md-0 bg-transparent">
-					<img src="./assets/images/three_cans_b.png" alt="Skin Treatment" class="card-img-top img-fit">
-					<div class="card-body">
-						<div class="card-title fw-bold">Skin Treatment</div>
-						<p class="card-text">Skin treatments rejuvenate and refresh your complexion. Our range of
-							treatments, from facials to peels, are designed to address your specific skin concerns and
-							leave you glowing.</p>
-					</div>
-					<a href="./services.html" class="stretched-link"></a>
-				</div>
-				<div class="col-12 col-md-4 card border-0 p-0 m-1 m-md-0 bg-transparent">
-					<img src="./assets/images/three_cans_c.png" alt="Manicures and Pedicures"
-						class="card-img-top img-fit">
-					<div class="card-body">
+				<div class="swiper-slide border-0 p-0 m-1 m-md-0 bg-transparent d-flex flex-column align-items-center">
+					<div class="list-unstyled card border-0 p-0 m-1 m-md-0 bg-transparent">
+						<img height="400" src="./assets/images/three_cans_c.png" alt="Manicures and Pedicures"
+							class="img-fit">
+						<!-- <div class="card-body"> -->
 						<div class="card-title fw-bold">Manicures and Pedicures</div>
-						<p class="card-text">Manicures and pedicures enhance the beauty and health of your nails. Our
-							expert technicians provide detailed care, ensuring your hands and feet look and feel their
-							best.</p>
+						<span class="card-text">$5.35 per can</span>
+						<!-- </div> -->
+						<!-- <a href="#" class="stretched-link"></a> -->
 					</div>
-					<a href="./services.html" class="stretched-link"></a>
 				</div>
 			</div>
+			<div class="swiper-pagination"></div>
 		</div>
+
+		<!-- Static Content for md and larger screens -->
+		<!-- <ul class="row justify-content-around d-none d-md-flex text-center list-unstyled">
+			<li class="col-12 col-md-4 card border-0 p-0 m-1 m-md-0 bg-transparent">
+				<img src="./assets/images/three_cans_a.png" alt="Hair Colouring" class="card-img-top img-fit">
+				<div class="card-body">
+					<div class="card-title fw-bold">Hair Colouring</div>
+					<p class="card-text">Hair colouring adds vibrancy and dimension to your look. Whether you want a
+						subtle change or a bold new color, our skilled colorists provide personalized services to
+						achieve your desired shade.</p>
+				</div>
+				<a href="./services.html" class="stretched-link"></a>
+			</li>
+			<li class="col-12 col-md-4 card border-0 p-0 m-1 m-md-0 bg-transparent">
+				<img src="./assets/images/three_cans_b.png" alt="Skin Treatment" class="card-img-top img-fit">
+				<div class="card-body">
+					<div class="card-title fw-bold">Skin Treatment</div>
+					<p class="card-text">Skin treatments rejuvenate and refresh your complexion. Our range of
+						treatments, from facials to peels, are designed to address your specific skin concerns and
+						leave you glowing.</p>
+				</div>
+				<a href="./services.html" class="stretched-link"></a>
+			</li>
+			<li class="col-12 col-md-4 card border-0 p-0 m-1 m-md-0 bg-transparent">
+				<img src="./assets/images/three_cans_c.png" alt="Manicures and Pedicures" class="card-img-top img-fit">
+				<div class="card-body">
+					<div class="card-title fw-bold">Manicures and Pedicures</div>
+					<p class="card-text">Manicures and pedicures enhance the beauty and health of your nails. Our
+						expert technicians provide detailed care, ensuring your hands and feet look and feel their
+						best.</p>
+				</div>
+				<a href="./services.html" class="stretched-link"></a>
+			</li>
+		</ul> -->
+
 	</section>
 	<section id="products" class="text-c">
 		<div class="bg-b w-100 text-center mb-5">
@@ -379,6 +362,7 @@
 		</div>
 	</footer>
 	<!-- JS Files -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer async></script>
 	<script src="./assets/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer async></script>
 	<script src="./assets/js/main.js" crossorigin="anonymous" defer async></script>
 	<script>
