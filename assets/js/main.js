@@ -31,22 +31,27 @@
 // document.addEventListener('DOMContentLoaded', function () {
 const swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
+    // effect: "fade",
     // effect: "cube",
+    speed: 700,
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: "auto",
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 0,
     coverflowEffect: {
         rotate: 50,
         stretch: 0,
         depth: 100,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false,
     },
     // cubeEffect: {
     //     slideShadows: false,
     // },
     pagination: {
         el: ".swiper-pagination",
+        // type: 'fractions',
     },
 });
 // });

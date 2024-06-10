@@ -128,7 +128,27 @@ h6 {
 	height: 300px;
 }
 
-/* .swiper-slide img {
+.swiper-slide img {
 	display: block;
 	width: 100%;
-} */
+}
+
+.parallax {
+	background-image: url('../images/pint_formation_a.png'); /* Replace with your image URL */
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.content {
+	height: 200vh; /* Extend the height to demonstrate scrolling */
+}
+.overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	padding: 50px;
+}
+.nav-link {
+	color: white !important;
+}
