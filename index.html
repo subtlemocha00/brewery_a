@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>SIP NATION</title>
+	<title>SIP NATION | HOME</title>
 	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<script src="https://kit.fontawesome.com/56b718db2c.js" crossorigin="anonymous"></script>
@@ -26,12 +26,12 @@
 	<section class="mb-5">
 
 		<div class="parallax position-relative top-0 w-100 d-flex justify-content-center align-items-center">
-			<div class="overlay text-center rounded-2">
+			<div class="overlay text-center">
 				<h1 class="text-c">Welcome to Sip Nation</h1>
 				<p class="text-e">Enjoy the best craft beer in town</p>
 			</div>
 		</div>
-		<nav class="z-3 navbar navbar-expand-lg position-absolute top-0 w-100">
+		<nav class="z-3 navbar navbar-expand-md position-absolute top-0 w-100 overlay p-1">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
 					<img src="./assets/images/logo.png" alt="Logo" width="60" class="d-inline-block align-text-top">
@@ -44,31 +44,34 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item px-1">
-							<a class="nav-link text-c" href="#">Home</a>
+							<a class="nav-link text-e" href="#">Home</a>
 						</li>
 						<li class="nav-item px-1">
-							<a class="nav-link text-c" href="#services">About Us</a>
+							<a class="nav-link text-e" href="#services">About Us</a>
 						</li>
 						<li class="nav-item px-1">
-							<a class="nav-link text-c" href="#menu">Menu</a>
+							<a class="nav-link text-e" href="#menu">Menu</a>
 						</li>
 						<li class="nav-item px-1">
-							<a class="nav-link text-c" href="#products">Beer</a>
+							<a class="nav-link text-e" href="./products.html">Beer</a>
 						</li>
 						<li class="nav-item px-1">
-							<a class="nav-link text-c" href="#contact">Contact Us</a>
+							<a class="nav-link text-e" href="./events.html">Events</a>
 						</li>
-						<li class="nav-item btn bg-a ms-0 p-0">
-							<a class="nav-link text-c" href="#">Store</a>
+						<li class="nav-item px-1">
+							<a class="nav-link text-e" href="#contact">Contact Us</a>
+						</li>
+						<li class="nav-item btn bg-a ms-0 me-2 p-0">
+							<a role="button" class="nav-link text-e" href="#">Store</a>
 						</li>
 						<div class="d-flex">
 							<li class="nav-item">
-								<a class="nav-link" href="https://www.facebook.com/yourbusiness" target="_blank">
+								<a class="nav-link mx-1" href="https://www.facebook.com/yourbusiness" target="_blank">
 									<i class="fab fa-facebook" style="color: #1877F2; font-size: 30px;"></i>
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="https://www.instagram.com/yourbusiness" target="_blank">
+								<a class="nav-link mx-1" href="https://www.instagram.com/yourbusiness" target="_blank">
 									<i class="fab fa-instagram" style="font-size: 30px;"></i>
 								</a>
 							</li>
@@ -159,42 +162,6 @@
 		<div class="bg-b w-100 text-center mb-5">
 			<h2 class="fw-bold p-4 m-0">Featured Brews</h2>
 		</div>
-		<!-- Swiper -->
-		<!-- <div class="d-lg-none swiper mySwiper container">
-			<div class="swiper-wrapper mb-5 p-3">
-				<div class="swiper-slide border-0 bg-transparent d-flex flex-column align-items-center">
-					<div class="list-unstyled card border-0 p-0 m-1 m-md-0 bg-transparent">
-						<div class="text-c">
-							<img height="400" src="./assets/images/pixel_ale.webp" alt="Hair Colouring" class="img-fit">
-							<div class="fw-bold">Wax Job</div>
-							<span class="">$3.40 per can</span>
-						</div>
-					</div>
-				</div>
-				<div
-					class="swiper-slide card border-0 p-0 m-1 m-md-0 bg-transparent d-flex flex-column align-items-center">
-					<div class="list-unstyled card border-0 p-0 m-1 m-md-0 bg-transparent">
-						<img height="400" src="./assets/images/beer_generic.webp" alt="Skin Treatment" class="img-fit">
-						<div class="text-c">
-							<div class="fw-bold">Skin Treatment</div>
-							<span class="card-text">$5.35 per can</span>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide border-0 p-0 m-1 m-md-0 bg-transparent d-flex flex-column align-items-center">
-					<div class="list-unstyled card border-0 p-0 m-1 m-md-0 bg-transparent">
-						<img height="400" src="./assets/images/stencil_lager.webp7" alt="Manicures and Pedicures"
-							class="img-fit">
-						<div class="text-c">
-							<div class="card-title fw-bold">Manicures and Pedicures</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="mt-5 swiper-pagination"></div>
-		</div> -->
-
-		<!-- Static Content for md and larger screens -->
 		<ul class="container row justify-content-around d-md-flex text-center p-3 w-100 g-3">
 			<div class="col-12 col-md-4">
 				<li class="card p-1 bg-b rounded-0 border-c">
@@ -205,7 +172,6 @@
 						<span class="text-e">5.9% ABV</span>
 						<button id="" class="btn text-a border-a rounded-0 mt-3">More Info</button>
 					</div>
-					<!-- <a href="./services.html" class="stretched-link"></a> -->
 				</li>
 			</div>
 			<div class="col-12 col-md-4">
@@ -217,7 +183,6 @@
 						<span class="text-e">5.0% ABV</span>
 						<button id="" class="btn text-a border-a rounded-0 mt-3">More Info</button>
 					</div>
-					<!-- <a href="./services.html" class="stretched-link"></a> -->
 				</li>
 			</div>
 			<div class="col-12 col-md-4">
@@ -229,107 +194,11 @@
 						<span class="text-e">4.0% ABV</span>
 						<button id="" class="btn text-a border-a rounded-0 mt-3">More Info</button>
 					</div>
-					<!-- <a href="./services.html" class="stretched-link"></a> -->
 				</li>
 			</div>
 		</ul>
 
 	</section>
-	<!-- <section id="products" class="text-c">
-		<div class="bg-b w-100 text-center mb-5">
-			<h2 class="fw-bold p-4 m-0">Products</h2>
-		</div>
-		<article class="container">
-			<img class="mt-2" src="./assets/images/moisturizer_b.png" alt="product image">
-			<img class="mb-2" src="./assets/images/beauty_logo_c.png" alt="logo">
-			<div class="text-center mb-5">
-				<h3 class="mt-4">Feram</h3>
-				<p class="my-2">Feram moisturizers harness the power of nature to provide exceptional skincare
-					solutions. Each product in
-					our moisturizer line is crafted with natural ingredients like aloe vera, shea butter, and essential
-					oils
-					to nourish and hydrate your skin. Our formulas are designed to enhance your skin's natural glow and
-					keep
-					it feeling soft and smooth. With Feram, experience the perfect blend of nature and science for
-					healthy,
-					radiant skin.</p>
-			</div>
-		</article>
-		<article class="container">
-			<img class="mt-2" src="./assets/images/facemask_a.png" alt="product image">
-			<img class="mb-2" src="./assets/images/clay_logo_a.png" alt="logo">
-			<div class="text-center mb-5">
-				<h3 class="mt-4">UsGa</h3>
-				<p class="my-2">UsGa's Radiance line of facial masks is designed to revitalize and rejuvenate
-					your skin. Infused with natural ingredients like green tea extract, hyaluronic acid, and vitamin C,
-					each
-					mask provides deep nourishment and hydration. Our masks are tailored to address various skin
-					concerns,
-					from brightening and firming to soothing and detoxifying. With UsGa, unlock the secret to radiant,
-					healthy skin, and enjoy a luxurious spa experience in the comfort of your own home.</p>
-			</div>
-		</article>
-		<article class="container">
-			<img class="mt-2" src="./assets/images/lotion_a.png" alt="product image">
-			<img class="mb-2" src="./assets/images/luxemane_a.png" alt="logo">
-			<div class="text-center mb-5">
-				<h3 class="mt-4">LuxMane</h3>
-				<p class="my-2">LuxMane's StyleMaster line of hair styling products offers the ultimate
-					tools
-					for creating and maintaining your perfect hairstyle. Featuring gels, pomades, and hairsprays, our
-					products provide strong hold and flexible styling. Infused with natural extracts like argan oil and
-					keratin, StyleMaster ensures your hair stays healthy and vibrant while giving you the freedom to
-					experiment with different looks. Whether you're going for sleek and smooth or bold and textured,
-					LuxMane
-					has the perfect solution.</p>
-			</div>
-		</article>
-		<article class="container">
-			<img class="mt-2" src="./assets/images/nail_polish_c.png" alt="product image">
-			<img class="mb-2" src="./assets/images/nail_logo_a.png" alt="logo">
-			<div class="text-center mb-5">
-				<h3 class="mt-4">NailGlitz</h3>
-				<p class="my-2">NailGlitz's GlamourTouch is your go-to for stunning nails. Our collection
-					includes a wide range of nail polishes, strengtheners, and cuticle oils, all designed to enhance and
-					protect your nails. Infused with nourishing ingredients like vitamin E and biotin, GlamourTouch
-					ensures
-					your nails remain strong and healthy while flaunting beautiful colors and finishes. From vibrant
-					hues to
-					subtle nudes, NailGlitz provides the perfect touch of glamour for any occasion.</p>
-			</div>
-		</article>
-		<article class="container">
-			<img class="mt-2" src="./assets/images/shampoo_a.png" alt="product image">
-			<img class="mb-2" src="./assets/images/shampoo_logo_a.png" alt="logo">
-			<div class="text-center mb-5">
-				<h3 class="mt-4">PureLock</h3>
-				<p class="my-2">PureLocks' Revive &#38; Nourish line of shampoos and conditioners is crafted to
-					restore and rejuvenate your hair. Formulated with natural ingredients like coconut oil, aloe vera,
-					and
-					chamomile, our products cleanse and condition your hair, leaving it soft, shiny, and manageable.
-					Each
-					formula is designed to address specific hair needs, from hydration and repair to volume and color
-					protection. With PureLocks, enjoy salon-quality hair care every day.</p>
-			</div>
-		</article>
-		<article class="container">
-			<img class="mt-2" src="./assets/images/lotion_c.png" alt="product image">
-			<img class="mb-2" src="./assets/images/aloe_logo_a.png" alt="logo">
-			<div class="text-center mb-5">
-				<h3 class="mt-4">GlowEssence</h3>
-				<p class="my-2">GlowEssence's SilkySmooth body lotions and scrubs offers luxurious
-					skincare solutions for glowing, healthy skin. Enriched with natural ingredients like shea
-					butter,
-					sea
-					salt, and jojoba oil, our products exfoliate, hydrate, and nourish your skin. SilkySmooth
-					lotions
-					provide deep moisture and a silky finish, while our scrubs gently remove dead skin cells,
-					revealing
-					your
-					natural radiance. Experience the essence of smooth, luminous skin with GlowEssence.</p>
-			</div>
-		</article>
-	</section> -->
 	<section id="contact" class="d-flex flex-column align-items-center w-100 px-0 mt-5 bg-info">
 		<div class="container m-md-3 my-5 rounded-3 px-0">
 			<div class="card p-3 shadow-lg bg-light">
@@ -366,7 +235,7 @@
 	<footer class="text-center my-3">
 		<div class="container">
 			<img src="./assets/images/logo.png" alt="">
-			<p>© <span id="currentYear"></span> Lifestyles Beauty Parlor | Designed by
+			<p>© <span id="currentYear"></span> Sip Nation Brewery | Designed by
 				<a href="https://subtlewebstudios.com" target="_blank">Subtle Web Studios</a>
 			</p>
 		</div>

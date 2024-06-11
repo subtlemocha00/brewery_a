@@ -75,14 +75,27 @@ h6 {
 .border-c {
 	border: 1px solid var(--main-c);
 }
+.bg-d {
+	background-color: var(--main-d);
+}
 .text-d {
 	color: var(--main-d);
 }
+
 .text-e {
 	color: var(--main-e);
 }
 .border-e {
 	border: 1px solid var(--main-e);
+}
+
+button.text-a:hover {
+	background-color: var(--main-a);
+	color: var(--main-e);
+}
+
+a.text-e:hover {
+	color: var(--main-c);
 }
 
 .text-outline {
@@ -96,7 +109,7 @@ h6 {
     -webkit-text-fill-color: transparent;
 }
 
-.customCarousel {
+/* .customCarousel {
     height: 40vh;
 }
 
@@ -112,7 +125,7 @@ h6 {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-}
+} */
 
 .img-fit {
 	/* height: 100%; */
@@ -133,24 +146,6 @@ h6 {
 	
 }
 
-.swiper {
-	width: 100%;
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-.swiper-slide {
-	background-position: center;
-	background-size: cover;
-	width: 300px;
-	height: 300px;
-}
-
-.swiper-slide img {
-	display: block;
-	width: 100%;
-}
-
 .parallax {
 	background-image: url('../images/pint_formation_a.png'); /* Replace with your image URL */
 	height: 100vh;
@@ -167,6 +162,6 @@ h6 {
 	color: white;
 	padding: 50px;
 }
-.nav-link {
-	color: white !important;
-}
+/* .nav-link {
+	color: white;
+} */
