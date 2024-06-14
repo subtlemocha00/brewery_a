@@ -131,6 +131,7 @@ a.text-e:hover {
 	/* height: 100%; */
 	width: 100%;
 	object-fit: cover;
+	/* object-position: top; */
 }
 
 @media (min-width: 576px) {
@@ -145,9 +146,13 @@ a.text-e:hover {
 	}
 	
 }
-
-.parallax {
+.bg-home {
 	background-image: url('../images/pint_formation_a.png'); /* Replace with your image URL */
+}
+.bg-events {
+	background-image: url('../images/junk_band.png');
+}
+.parallax {
 	height: 100vh;
 	background-attachment: fixed;
 	background-position: center;
