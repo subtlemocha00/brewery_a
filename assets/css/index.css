@@ -128,7 +128,7 @@ a.text-e:hover {
 } */
 
 .img-fit {
-	/* height: 100%; */
+	height: 100%;
 	width: 100%;
 	object-fit: cover;
 	/* object-position: top; */
@@ -150,7 +150,7 @@ a.text-e:hover {
 	background-image: url('../images/pint_formation_a.png'); /* Replace with your image URL */
 }
 .bg-events {
-	background-image: url('../images/junk_band.png');
+	background-image: url('../images/band_stage_a.png');
 }
 .parallax {
 	height: 100vh;
