@@ -23,9 +23,10 @@
 </script>
 
 <body class="bg-b text-light">
-	<section class="mb-5">
+	<section class="mb-4">
 
-		<div class="bg-home parallax position-relative top-0 w-100 d-flex justify-content-center align-items-center">
+		<div
+			class="bg-home parallax position-relative top-0 w-100 d-flex justify-content-center align-items-center border-hero">
 			<div class="overlay text-center">
 				<h1 class="text-c">Welcome to Sip Nation</h1>
 				<p class="text-e">Enjoy the best craft beer in town</p>
@@ -47,13 +48,10 @@
 							<a class="nav-link text-e" href="#">Home</a>
 						</li>
 						<li class="nav-item px-1">
-							<a class="nav-link text-e" href="#services">About Us</a>
+							<a class="nav-link text-e" href="./products.html">Beer</a>
 						</li>
 						<li class="nav-item px-1">
 							<a class="nav-link text-e" href="#menu">Menu</a>
-						</li>
-						<li class="nav-item px-1">
-							<a class="nav-link text-e" href="./products.html">Beer</a>
 						</li>
 						<li class="nav-item px-1">
 							<a class="nav-link text-e" href="./events.html">Events</a>
@@ -61,9 +59,9 @@
 						<li class="nav-item px-1">
 							<a class="nav-link text-e" href="#contact">Contact Us</a>
 						</li>
-						<li class="nav-item btn bg-a ms-0 me-2 p-0">
+						<!-- <li class="nav-item btn bg-a ms-0 me-2 p-0">
 							<a role="button" class="nav-link text-e" href="#">Store</a>
-						</li>
+						</li> -->
 						<div class="d-flex">
 							<li class="nav-item">
 								<a class="nav-link mx-1" href="https://www.facebook.com/yourbusiness" target="_blank">
@@ -83,7 +81,7 @@
 	</section>
 
 	<section id="about" class="d-flex flex-column">
-		<div class="bg-b w-100 text-center mb-5">
+		<div class="bg-b w-100 text-center mb-4">
 			<h2 class="fw-bold m-0 text-c">About</h2>
 		</div>
 		<article class="container text-center text-md-start text-c">
@@ -100,12 +98,16 @@
 
 			</p>
 			<div class="d-md-none mb-3">
-				<img src="./assets/images/beer_bear.png" alt="Relax at our beauty parlor" class="img-fit" height="300">
-				<figcaption class="text-muted">Come into Lifestyles Beauty Bar to relax and rejuvenate.</figcaption>
+				<img src="./assets/images/beer_bear.png" alt="Relax at our beauty parlor" class="img-fit-h figure-img"
+					height="300">
+				<figcaption class="text-e figure-caption">Come into Lifestyles Beauty Bar to relax and rejuvenate.
+				</figcaption>
 			</div>
 			<div class="float-md-start me-md-4 d-none d-md-block">
-				<img src="./assets/images/beer_bear.png" alt="Relax at our beauty parlor" class="img-fit" height="400">
-				<figcaption class="text-muted">Come into Lifestyles Beauty Bar to relax and rejuvenate.</figcaption>
+				<img src="./assets/images/beer_bear.png" alt="Relax at our beauty parlor" class="img-fit-h figure-img"
+					height="400">
+				<figcaption class="text-e figure-caption">Come into Lifestyles Beauty Bar to relax and rejuvenate.
+				</figcaption>
 			</div>
 			<p>
 				Here, the beer flows like a river of dreams, each pint a testament to the art of brewing, each sip a
@@ -128,122 +130,112 @@
 			</p>
 		</article>
 	</section>
-	<!-- <section id="products">
-		<div id="carouselHome" class="w-100 z-0 carousel slide customCarousel" data-bs-ride="carousel"
-			data-bs-touch="true">
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active"
-					aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
-			</div>
-			<div class="carousel-inner customCarousel">
-				<div class="carousel-item active">
-					<img src="./assets/images/sip_nation_logo.png" class="d-block" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="./assets/images/beer_cans_bartop_a.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="./assets/images/beer_cans_bartop_b.png" class="d-block w-100" alt="...">
-				</div>
-			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
+	<section id="products" class="d-flex flex-column justify-content-center align-items-center text-c">
+		<hr class="text-e w-100 mx-5" style="border-width: 3px;">
+		<div class="bg-b w-100 text-center mb-4">
+			<h2 class="fw-bold m-0">Featured Brews</h2>
 		</div>
-	</section> -->
-	<section id="products" class="d-flex flex-column justify-content-center align-items-center pb-5 text-c">
-		<div class="bg-b w-100 text-center mb-5">
-			<h2 class="fw-bold p-4 m-0">Featured Brews</h2>
-		</div>
-		<ul class="container row justify-content-around d-md-flex text-center p-3 w-100 g-3">
-			<div class="col-12 col-md-4">
-				<li class="card p-1 bg-b rounded-0 border-c">
-					<img src="./assets/images/pixel_ale.webp" alt="Properly Pixelated" class="card-img-top img-fit p-1">
-					<div class="card-body text-c d-flex flex-column">
+		<ul class="container row justify-content-around d-md-flex text-center">
+			<div class="col-12 col-md-4 my-3">
+				<li class="card p-1 bg-b rounded-0 border-c h-100">
+					<img src="./assets/images/pixel_ale.webp" alt="Properly Pixelated" class="img-fit p-1 fade-in">
+					<div class="card-body text-c d-flex flex-column h-100">
 						<h5 class="fw-bold">Properly Pixelated</h5>
 						<span class="">Juicy IPA</span>
-						<span class="text-e">5.9% ABV</span>
-						<button id="" class="btn text-a border-a rounded-0 mt-3">More Info</button>
+						<span class="text-e mg-3">5.9% ABV</span>
+						<button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
 					</div>
 				</li>
 			</div>
-			<div class="col-12 col-md-4">
-				<li class=" card p-1 bg-b rounded-0 border-c">
-					<img src="./assets/images/beer_generic.webp" alt="Snowbird Lager" class="card-img-top img-fit p-1">
-					<div class="card-body text-c d-flex flex-column">
+			<div class="col-12 col-md-4 my-3">
+				<li class="card p-1 bg-b rounded-0 border-c h-100">
+					<img src="./assets/images/beer_generic.webp" alt="Snowbird Lager" class="img-fit p-1 fade-in">
+					<div class="card-body text-c d-flex flex-column h-100">
 						<h5 class="fw-bold">Snowbird Lager</h5>
 						<span class="">Canadian Lager</span>
-						<span class="text-e">5.0% ABV</span>
-						<button id="" class="btn text-a border-a rounded-0 mt-3">More Info</button>
+						<span class="text-e mb-3">5.0% ABV</span>
+						<button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
 					</div>
 				</li>
 			</div>
-			<div class="col-12 col-md-4">
-				<li class="card p-1 bg-b rounded-0 border-c">
-					<img src="./assets/images/stencil_lager.webp" alt="Knuckle Pucker" class="card-img-top img-fit p-1">
+			<div class="col-12 col-md-4 my-3">
+				<li class="card p-1 bg-b rounded-0 border-c h-100">
+					<img src="./assets/images/stencil_lager.webp" alt="Knuckle Pucker" class="img-fit p-1 fade-in">
 					<div class="card-body text-c d-flex flex-column">
 						<h5 class="fw-bold">Knuckle Puck(er)</h5>
 						<span class="">Kettle Sour</span>
-						<span class="text-e">4.0% ABV</span>
-						<button id="" class="btn text-a border-a rounded-0 mt-3">More Info</button>
+						<span class="text-e mb-3">4.0% ABV</span>
+						<button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
 					</div>
 				</li>
 			</div>
 		</ul>
 
 	</section>
-	<section id="contact" class="d-flex flex-column align-items-center w-100 px-0 mt-5 bg-info">
+	<section id="contact" class="d-flex flex-column align-items-center w-100 px-0 mt-5">
 		<div class="container m-md-3 my-5 rounded-3 px-0">
-			<div class="card p-3 shadow-lg bg-light">
+			<div class="card p-3 shadow-lg bg-b">
 				<div class="card-body">
-					<h2 class="">Get In Touch</h2>
-					<p class="lead">Have questions? Reach out to us anytime!</p>
-					<form action="" method="">
+					<h2 class="text-c">Get In Touch</h2>
+					<p class="lead text-c">Have questions? Reach out to us anytime!</p>
+					<form action="" method="" class="d-flex flex-column justify-content-center d-md-block">
 						<div class="row form-floating mb-3">
-							<input id="full-name" name="full-name" class="form-control input-border" type="text"
+							<input id="full-name" name="full-name" class="form-control border-c bg-b" type="text"
 								placeholder="Full Name" required>
-							<label class="form-label" for="full-name">Full Name*</label>
+							<label class="form-label text-e" for="full-name">Full Name*</label>
 						</div>
 						<div class="row form-floating mb-3">
-							<input id="email" name="email" class="form-control input-border" type="email"
+							<input id="email" name="email" class="form-control border-c bg-b" type="email"
 								placeholder="Email" required>
-							<label class="form-label" for="email">Email*</label>
+							<label class="form-label text-e" for="email">Email*</label>
 						</div>
 						<div class="row form-floating mb-3">
-							<input id="subject" name="subject" class="form-control input-border" type="text"
+							<input id="subject" name="subject" class="form-control border-c bg-b" type="text"
 								placeholder="Subject" required>
-							<label class="form-label" for="subject">Subject*</label>
+							<label class="form-label text-e" for="subject">Subject*</label>
 						</div>
 						<div class="row form-floating mb-3">
-							<textarea id="message" name="message" class="form-control input-border"
+							<textarea id="message" name="message" class="form-control border-c bg-b"
 								style="height: 150px;" type="text" placeholder="Message..." required></textarea>
-							<label class="form-label" for="message">Message*</label>
+							<label class="form-label text-e" for="message">Message*</label>
 						</div>
-						<button class="btn btn-info">Submit</button>
+						<button class="btn text-a border-a rounded-0 mt-auto mx-auto px-5">Submit</button>
 					</form>
 				</div>
 			</div>
 		</div>
 	</section>
-	<footer class="text-center my-3">
-		<div class="container">
-			<img src="./assets/images/logo.png" alt="">
-			<p>© <span id="currentYear"></span> Sip Nation Brewery | Designed by
-				<a href="https://subtlewebstudios.com" target="_blank">Subtle Web Studios</a>
-			</p>
-		</div>
-	</footer>
+	<section id="footer" class="text-c m-1 d-flex flex-column align-items-center">
+		<footer class="">
+			<div class="row text-center d-flex justify-content-center py-3">
+				<div class="col-sm-2 btn">
+					<a href=".#" class="text-c nav-link">HOME</a>
+				</div>
+				<div class="col-sm-2 btn">
+					<a href="./products.html" class="text-d nav-link">BEER</a>
+				</div>
+				<div class="col-sm-2 btn">
+					<a href="#" class="text-d nav-link">MENU</a>
+				</div>
+				<div class="col-sm-2 btn">
+					<a href="./events.html" class="text-d nav-link">EVENTS</a>
+				</div>
+				<div class="col-sm-4 btn">
+					<a href="#contact" class="text-d nav-link">CONTACT US</a>
+				</div>
+			</div>
+			<div class="d-flex flex-column align-items-center">
+				<img class="mb-3" src="./assets/images/logo.png" alt="logo" height="60px">
+				<p>© <span id="currentYear"></span> Sip Nation | Designed by
+					<a href="https://subtlewebstudios.com" target="_blank">Subtle Web Studios</a>
+				</p>
+			</div>
+		</footer>
+	</section>
 	<!-- JS Files -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer async></script>
 	<script src="./assets/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer async></script>
-	<script src="./assets/js/main.js" crossorigin="anonymous" defer async></script>
+	<script src="./assets/js/main.js" crossorigin="anonymous" defer></script>
 	<script>
 		document.getElementById("currentYear").textContent = new Date().getFullYear();
 	</script>

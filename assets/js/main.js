@@ -1,57 +1,13 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     const carouselElement = document.getElementById('carouselHighlights');
-//     const carousel = new bootstrap.Carousel(carouselElement, {
-//         interval: 3000,
-//         touch: false // Disable Bootstrap's built-in touch handling
-//     });
+document.addEventListener('DOMContentLoaded', function () {
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Optional: Stop observing once the class is added
+            }
+        });
+    });
 
-//     let startX = 0;
-
-//     carouselElement.addEventListener('touchstart', function (event) {
-//         startX = event.touches[0].clientX;
-//     });
-
-//     carouselElement.addEventListener('touchmove', function (event) {
-//         const dx = event.touches[0].clientX - startX;
-//         carouselElement.querySelector('.carousel-inner').style.transform = `translateX(${dx}px)`;
-//     });
-
-//     const handleTouchEnd = function (event) {
-//         const dx = event.changedTouches[0].clientX - startX;
-//         const threshold = carouselElement.offsetWidth / 3; // Threshold to consider it a swipe
-//         if (Math.abs(dx) > threshold) {
-//             dx < 0 ? carousel.next() : carousel.prev();
-//         }
-//         carouselElement.querySelector('.carousel-inner').style.transform = '';
-//     };
-
-//     carouselElement.addEventListener('touchend', handleTouchEnd);
-//     carouselElement.addEventListener('touchcancel', handleTouchEnd);
-// });
-// document.addEventListener('DOMContentLoaded', function () {
-const swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    // effect: "fade",
-    // effect: "cube",
-    speed: 700,
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: 1,
-    loop: true,
-    spaceBetween: 0,
-    coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: false,
-    },
-    // cubeEffect: {
-    //     slideShadows: false,
-    // },
-    pagination: {
-        el: ".swiper-pagination",
-        // type: 'fractions',
-    },
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach(el => observer.observe(el));
 });
-// });

@@ -60,24 +60,34 @@ h6 {
 .bg-a {
 	background-color: var(--main-a);
 }
+
 .text-a {
 	color: var(--main-a);
 }
+
 .border-a {
 	border: 1px solid var(--main-a);
 }
+
 .bg-b {
 	background-color: var(--main-b);
+}
+
+.bg-c {
+	background-color: var(--main-c);
 }
 .text-c {
 	color: var(--main-c);
 }
+
 .border-c {
 	border: 1px solid var(--main-c);
 }
+
 .bg-d {
 	background-color: var(--main-d);
 }
+
 .text-d {
 	color: var(--main-d);
 }
@@ -85,8 +95,13 @@ h6 {
 .text-e {
 	color: var(--main-e);
 }
+
 .border-e {
 	border: 1px solid var(--main-e);
+}
+
+.border-hero {
+	border-bottom: 3px solid var(--main-c);
 }
 
 button.text-a:hover {
@@ -109,49 +124,25 @@ a.text-e:hover {
     -webkit-text-fill-color: transparent;
 }
 
-/* .customCarousel {
-    height: 40vh;
-}
-
-.carousel-inner {
-	height: 100%;
-}
-
-.carousel-item {
-	height: 100%;
-}
-
-.carousel-item img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-} */
-
 .img-fit {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-	/* object-position: top; */
 }
 
-@media (min-width: 576px) {
-	.customCarousel {
-		height: 50vh;
-	}
-	
+.img-fit-h {
+	width: 100%;
+	object-fit: cover;
 }
-@media (min-width: 992px) {
-	.customCarousel {
-		height: 75vh;
-	}
-	
-}
+
 .bg-home {
 	background-image: url('../images/pint_formation_a.png'); /* Replace with your image URL */
 }
+
 .bg-events {
 	background-image: url('../images/band_stage_a.png');
 }
+
 .parallax {
 	height: 100vh;
 	background-attachment: fixed;
@@ -159,14 +150,30 @@ a.text-e:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 .content {
-	height: 200vh; /* Extend the height to demonstrate scrolling */
+	height: 200vh;
 }
+
 .overlay {
 	background-color: rgba(0, 0, 0, 0.5);
 	color: white;
 	padding: 50px;
 }
-/* .nav-link {
-	color: white;
-} */
+
+.fade-in {
+	opacity: 0;
+}
+
+.fade-in.visible {
+	animation: fadeIn 1.5s linear forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
