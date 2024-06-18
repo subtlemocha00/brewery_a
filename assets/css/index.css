@@ -136,11 +136,15 @@ a.text-e:hover {
 }
 
 .bg-home {
-	background-image: url('../images/pint_formation_a.png'); /* Replace with your image URL */
+	background-image: url('../images/friends_drinks_a.png'); /* Replace with your image URL */
 }
 
 .bg-events {
 	background-image: url('../images/band_stage_a.png');
+}
+
+.bg-products {
+	background-image: url('../images/pint_formation_a.png');
 }
 
 .parallax {
@@ -176,4 +180,9 @@ a.text-e:hover {
 	to {
 		opacity: 1;
 	}
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
 }
