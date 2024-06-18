@@ -174,6 +174,11 @@
 		<div class="bg-b w-100 text-center mb-4">
 			<h2 class="fw-bold m-0">Featured Brews</h2>
 		</div>
+
+		<!-- add modals when More Info button is clicked -->
+		<!-- should include beer name, image, style, ABV, description, price, quantity available -->
+		<!-- i.e. single can, 6-pack, 24. future add to cart button -->
+
 		<ul class="container row justify-content-around d-md-flex text-center">
 			<div class="col-12 col-md-4 my-3">
 				<li class="card p-1 bg-b rounded-0 border-c h-100">
@@ -209,8 +214,10 @@
 				</li>
 			</div>
 		</ul>
-
 	</section>
+
+	<!-- make a separate contact page, inviting people to inquire about parties, reservations -->
+
 	<section id="contact" class="d-flex flex-column align-items-center w-100 px-0 mt-5">
 		<div class="container m-md-3 my-5 rounded-3 px-0">
 			<div class="card p-3 shadow-lg bg-b">
@@ -279,7 +286,7 @@
 		document.getElementById("currentYear").textContent = new Date().getFullYear();
 	</script>
 	<script>
-		// JavaScript to dynamically update background position based on scroll
+		// parallax JS script
 		window.addEventListener('scroll', function () {
 			const parallax = document.querySelector('.parallax');
 			let offset = window.pageYOffset;

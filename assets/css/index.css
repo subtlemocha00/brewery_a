@@ -57,6 +57,10 @@ h6 {
 	isolation: isolate;
 }
 
+.text-small {
+	font-size: .75rem;
+}
+
 .bg-a {
 	background-color: var(--main-a);
 }
