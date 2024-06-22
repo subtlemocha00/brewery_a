@@ -45,16 +45,72 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item px-1">
-                            <a class="nav-link text-e" href="./index.html">Home</a>
+                            <a class="nav-link text-e active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item px-1">
-                            <a class="nav-link text-e" href="#services">About Us</a>
+                            <a class="nav-link text-e" href="./products.html">Menu</a>
                         </li>
-                        <li class="nav-item px-1">
-                            <a class="nav-link text-e" href="#menu">Menu</a>
-                        </li>
-                        <li class="nav-item px-1">
-                            <a class="nav-link text-e" href="#products">Beer</a>
+                        <li class="nav-item px-1 dropdown p-1">
+                            <a class="nav-link text-e dropdown-toggle py-1" href="#">Hours</a>
+                            <ul class="dropdown-menu overlay p-2">
+                                <li class="text-e d-flex text-nowrap justify-content-between">
+                                    <div class="">
+                                        <span class="">Monday</span>
+                                    </div>
+                                    <div>
+                                        <span class="text-right">Closed</span>
+                                    </div>
+                                </li>
+                                <li class="text-e d-flex text-nowrap justify-content-between">
+                                    <div>
+                                        <span class="">Tuesday</span>
+                                    </div>
+                                    <div>
+                                        <span class="">11:00 - 21:00</span>
+                                    </div>
+                                </li>
+                                <li class="text-e d-flex text-nowrap justify-content-between">
+                                    <div>
+                                        <span class="me-3">Wednesday</span>
+                                    </div>
+                                    <div>
+                                        <span class="">11:00 - 21:00</span>
+                                    </div>
+                                </li>
+                                <li class="text-e d-flex text-nowrap justify-content-between">
+                                    <div>
+                                        <span class="">Thursday</span>
+                                    </div>
+                                    <div>
+                                        <span class="">11:00 - 21:00</span>
+                                    </div>
+                                </li>
+                                <li class="text-e d-flex text-nowrap justify-content-between">
+                                    <div>
+                                        <span class="">Friday</span>
+                                    </div>
+                                    <div>
+                                        <span class="">10:00 - 21:00</span>
+                                    </div>
+                                </li>
+                                <li class="text-e d-flex text-nowrap justify-content-between">
+                                    <div>
+                                        <span class="">Saturday</span>
+                                    </div>
+                                    <div>
+                                        <span class="">10:00 - 23:00</span>
+                                    </div>
+                                </li>
+                                <li class="text-e d-flex text-nowrap justify-content-between">
+                                    <div>
+                                        <span class="">Sunday</span>
+                                    </div>
+                                    <div>
+                                        <span class="">11:00 - 18:00</span>
+                                    </div>
+                                </li>
+
+                            </ul>
                         </li>
                         <li class="nav-item px-1">
                             <a class="nav-link text-e" href="./events.html">Events</a>
@@ -62,9 +118,9 @@
                         <li class="nav-item px-1">
                             <a class="nav-link text-e" href="#contact">Contact Us</a>
                         </li>
-                        <li class="nav-item btn bg-a ms-0 me-2 p-0">
-                            <a role="button" class="nav-link text-e" href="#">Store</a>
-                        </li>
+                        <!-- <li class="nav-item btn bg-a ms-0 me-2 p-0">
+							<a role="button" class="nav-link text-e" href="#">Store</a>
+						</li> -->
                         <div class="d-flex">
                             <li class="nav-item">
                                 <a class="nav-link mx-1" href="https://www.facebook.com/yourbusiness" target="_blank">
@@ -82,101 +138,256 @@
             </div>
         </nav>
     </section>
-    <section id="products" class="text-c">
-        <div class="bg-b w-100 text-center mb-5">
-            <h2 class="fw-bold p-4 m-0">Products</h2>
+    <section id="products" class="d-flex flex-column justify-content-center align-items-center text-c">
+        <div class="bg-b w-100 text-center mb-4">
+            <h2 class="fw-bold m-0">Featured Brews</h2>
         </div>
-        <article class="container">
-            <img class="mt-2" src="./assets/images/moisturizer_b.png" alt="product image">
-            <img class="mb-2" src="./assets/images/beauty_logo_c.png" alt="logo">
-            <div class="text-center mb-5">
-                <h3 class="mt-4">Feram</h3>
-                <p class="my-2">Feram moisturizers harness the power of nature to provide exceptional skincare
-                    solutions. Each product in
-                    our moisturizer line is crafted with natural ingredients like aloe vera, shea butter, and essential
-                    oils
-                    to nourish and hydrate your skin. Our formulas are designed to enhance your skin's natural glow and
-                    keep
-                    it feeling soft and smooth. With Feram, experience the perfect blend of nature and science for
-                    healthy,
-                    radiant skin.</p>
+
+        <!-- add modals when More Info button is clicked -->
+        <!-- should include beer name, image, style, ABV, description, price, quantity available -->
+        <!-- i.e. single can, 6-pack, 24. future add to cart button -->
+
+        <ul class="container row justify-content-around d-md-flex text-center">
+            <div class="col-12 col-md-4 my-3">
+                <li class="card p-1 bg-b rounded-0 border-c h-100">
+                    <img src="./assets/images/pixel_ale.webp" alt="Properly Pixelated" class="img-fit-h p-1 fade-in">
+                    <div class="card-body text-c d-flex flex-column h-100">
+                        <h5 class="fw-bold">Properly Pixelated</h5>
+                        <span class="">Juicy IPA</span>
+                        <span class="text-e mg-3">5.9% ABV</span>
+                        <button id="" class="btn text-a border-a rounded-0 mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#modalA">More Info</button>
+                    </div>
+                </li>
             </div>
-        </article>
-        <article class="container">
-            <img class="mt-2" src="./assets/images/facemask_a.png" alt="product image">
-            <img class="mb-2" src="./assets/images/clay_logo_a.png" alt="logo">
-            <div class="text-center mb-5">
-                <h3 class="mt-4">UsGa</h3>
-                <p class="my-2">UsGa's Radiance line of facial masks is designed to revitalize and rejuvenate
-                    your skin. Infused with natural ingredients like green tea extract, hyaluronic acid, and vitamin C,
-                    each
-                    mask provides deep nourishment and hydration. Our masks are tailored to address various skin
-                    concerns,
-                    from brightening and firming to soothing and detoxifying. With UsGa, unlock the secret to radiant,
-                    healthy skin, and enjoy a luxurious spa experience in the comfort of your own home.</p>
+            <div class="modal fade" id="modalA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered bg-b p-3 container row modal-width mx-auto">
+                    <div class="col-12 col-md-5 mb-2 border-c p-1">
+                        <img class="img-fit" src="./assets/images/pixel_ale.webp" alt="product image">
+                    </div>
+                    <div class="col-12 col-md-7 mt-2 mt-md-0 d-flex flex-column ps-md-5">
+                        <div>
+                            <h2>Properly Pixelated</h2>
+                            <h4 class="text-e">Juicy IPA</h4>
+                            <h6 class="text-e">5.9% ABV</h6>
+                        </div>
+
+                        <p class="mt-2">Get ready to be captivated by the raw and soulful sound of The Nico Tera Band.
+                            Join us
+                            at our brewery for an intimate performance that
+                            promises to leave you spellbound. Don’t miss the chance to see The Nico Tera Band live and
+                            feel
+                            the magic of their music!
+                        </p>
+                        <a href="#" class="btn bg-c rounded-pill p-3 px-5 mx-auto mt-3">Tickets</a>
+                    </div>
+                    <!-- <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Properly Pixelated</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div> -->
+                </div>
             </div>
-        </article>
-        <article class="container">
-            <img class="mt-2" src="./assets/images/lotion_a.png" alt="product image">
-            <img class="mb-2" src="./assets/images/luxemane_a.png" alt="logo">
-            <div class="text-center mb-5">
-                <h3 class="mt-4">LuxMane</h3>
-                <p class="my-2">LuxMane's StyleMaster line of hair styling products offers the ultimate
-                    tools
-                    for creating and maintaining your perfect hairstyle. Featuring gels, pomades, and hairsprays, our
-                    products provide strong hold and flexible styling. Infused with natural extracts like argan oil and
-                    keratin, StyleMaster ensures your hair stays healthy and vibrant while giving you the freedom to
-                    experiment with different looks. Whether you're going for sleek and smooth or bold and textured,
-                    LuxMane
-                    has the perfect solution.</p>
+
+            <!-- <div class="modal" id="modalA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Properly Pixelated</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-12 col-md-4 my-3">
+                <li class="card p-1 bg-b rounded-0 border-c h-100">
+                    <img src="./assets/images/beer_generic.webp" alt="Snowbird Lager" class="img-fit-h p-1 fade-in">
+                    <div class="card-body text-c d-flex flex-column h-100">
+                        <h5 class="fw-bold">Snowbird Lager</h5>
+                        <span class="">Canadian Lager</span>
+                        <span class="text-e mb-3">5.0% ABV</span>
+                        <button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
+                    </div>
+                </li>
             </div>
-        </article>
-        <article class="container">
-            <img class="mt-2" src="./assets/images/nail_polish_c.png" alt="product image">
-            <img class="mb-2" src="./assets/images/nail_logo_a.png" alt="logo">
-            <div class="text-center mb-5">
-                <h3 class="mt-4">NailGlitz</h3>
-                <p class="my-2">NailGlitz's GlamourTouch is your go-to for stunning nails. Our collection
-                    includes a wide range of nail polishes, strengtheners, and cuticle oils, all designed to enhance and
-                    protect your nails. Infused with nourishing ingredients like vitamin E and biotin, GlamourTouch
-                    ensures
-                    your nails remain strong and healthy while flaunting beautiful colors and finishes. From vibrant
-                    hues to
-                    subtle nudes, NailGlitz provides the perfect touch of glamour for any occasion.</p>
+            <div class="col-12 col-md-4 my-3">
+                <li class="card p-1 bg-b rounded-0 border-c h-100">
+                    <img src="./assets/images/stencil_lager.webp" alt="Knuckle Pucker" class="img-fit-h p-1 fade-in">
+                    <div class="card-body text-c d-flex flex-column">
+                        <h5 class="fw-bold">Knuckle Puck(er)</h5>
+                        <span class="">Maple Kettle Sour</span>
+                        <span class="text-e mb-3">4.0% ABV</span>
+                        <button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
+                    </div>
+                </li>
             </div>
-        </article>
-        <article class="container">
-            <img class="mt-2" src="./assets/images/shampoo_a.png" alt="product image">
-            <img class="mb-2" src="./assets/images/shampoo_logo_a.png" alt="logo">
-            <div class="text-center mb-5">
-                <h3 class="mt-4">PureLock</h3>
-                <p class="my-2">PureLocks' Revive &#38; Nourish line of shampoos and conditioners is crafted to
-                    restore and rejuvenate your hair. Formulated with natural ingredients like coconut oil, aloe vera,
-                    and
-                    chamomile, our products cleanse and condition your hair, leaving it soft, shiny, and manageable.
-                    Each
-                    formula is designed to address specific hair needs, from hydration and repair to volume and color
-                    protection. With PureLocks, enjoy salon-quality hair care every day.</p>
+            <div class="col-12 col-md-4 my-3">
+                <li class="card p-1 bg-b rounded-0 border-c h-100">
+                    <img src="./assets/images/can_a.png" alt="Properly Pixelated" class="img-fit-h p-1 fade-in">
+                    <div class="card-body text-c d-flex flex-column h-100">
+                        <h5 class="fw-bold">Properly Pixelated</h5>
+                        <span class="">Juicy IPA</span>
+                        <span class="text-e mg-3">5.9% ABV</span>
+                        <button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
+                    </div>
+                </li>
             </div>
-        </article>
-        <article class="container">
-            <img class="mt-2" src="./assets/images/lotion_c.png" alt="product image">
-            <img class="mb-2" src="./assets/images/aloe_logo_a.png" alt="logo">
-            <div class="text-center mb-5">
-                <h3 class="mt-4">GlowEssence</h3>
-                <p class="my-2">GlowEssence's SilkySmooth body lotions and scrubs offers luxurious
-                    skincare solutions for glowing, healthy skin. Enriched with natural ingredients like shea
-                    butter,
-                    sea
-                    salt, and jojoba oil, our products exfoliate, hydrate, and nourish your skin. SilkySmooth
-                    lotions
-                    provide deep moisture and a silky finish, while our scrubs gently remove dead skin cells,
-                    revealing
-                    your
-                    natural radiance. Experience the essence of smooth, luminous skin with GlowEssence.</p>
+            <div class="col-12 col-md-4 my-3">
+                <li class="card p-1 bg-b rounded-0 border-c h-100">
+                    <img src="./assets/images/moon_can_a.png" alt="Snowbird Lager" class="img-fit-h p-1 fade-in">
+                    <div class="card-body text-c d-flex flex-column h-100">
+                        <h5 class="fw-bold">Snowbird Lager</h5>
+                        <span class="">Canadian Lager</span>
+                        <span class="text-e mb-3">5.0% ABV</span>
+                        <button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
+                    </div>
+                </li>
             </div>
-        </article>
+            <div class="col-12 col-md-4 my-3">
+                <li class="card p-1 bg-b rounded-0 border-c h-100">
+                    <img src="./assets/images/devil_can_a.png" alt="Knuckle Pucker" class="img-fit-h p-1 fade-in">
+                    <div class="card-body text-c d-flex flex-column">
+                        <h5 class="fw-bold">Knuckle Puck(er)</h5>
+                        <span class="">Maple Kettle Sour</span>
+                        <span class="text-e mb-3">4.0% ABV</span>
+                        <button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
+                    </div>
+                </li>
+            </div>
+            <div class="col-12 col-md-4 my-3">
+                <li class="card p-1 bg-b rounded-0 border-c h-100">
+                    <img src="./assets/images/can_b.png" alt="Properly Pixelated" class="img-fit-h p-1 fade-in">
+                    <div class="card-body text-c d-flex flex-column h-100">
+                        <h5 class="fw-bold">Properly Pixelated</h5>
+                        <span class="">Juicy IPA</span>
+                        <span class="text-e mg-3">5.9% ABV</span>
+                        <button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
+                    </div>
+                </li>
+            </div>
+            <div class="col-12 col-md-4 my-3">
+                <li class="card p-1 bg-b rounded-0 border-c h-100">
+                    <img src="./assets/images/badseas.png" alt="Snowbird Lager" class="img-fit-h p-1 fade-in">
+                    <div class="card-body text-c d-flex flex-column h-100">
+                        <h5 class="fw-bold">Snowbird Lager</h5>
+                        <span class="">Canadian Lager</span>
+                        <span class="text-e mb-3">5.0% ABV</span>
+                        <button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
+                    </div>
+                </li>
+            </div>
+            <div class="col-12 col-md-4 my-3">
+                <li class="card p-1 bg-b rounded-0 border-c h-100">
+                    <img src="./assets/images/zenjoy.png" alt="Knuckle Pucker" class="img-fit-h p-1 fade-in">
+                    <div class="card-body text-c d-flex flex-column">
+                        <h5 class="fw-bold">Knuckle Puck(er)</h5>
+                        <span class="">Maple Kettle Sour</span>
+                        <span class="text-e mb-3">4.0% ABV</span>
+                        <button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
+                    </div>
+                </li>
+            </div>
+            <div class="col-12 col-md-4 my-3">
+                <li class="card p-1 bg-b rounded-0 border-c h-100">
+                    <img src="./assets/images/trail_runner.png" alt="Knuckle Pucker" class="img-fit-h p-1 fade-in">
+                    <div class="card-body text-c d-flex flex-column">
+                        <h5 class="fw-bold">Knuckle Puck(er)</h5>
+                        <span class="">Maple Kettle Sour</span>
+                        <span class="text-e mb-3">4.0% ABV</span>
+                        <button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
+                    </div>
+                </li>
+            </div>
+            <div class="col-12 col-md-4 my-3">
+                <li class="card p-1 bg-b rounded-0 border-c h-100">
+                    <img src="./assets/images/three_cans_b.png" alt="Knuckle Pucker" class="img-fit-h p-1 fade-in">
+                    <div class="card-body text-c d-flex flex-column">
+                        <h5 class="fw-bold">Knuckle Puck(er)</h5>
+                        <span class="">Maple Kettle Sour</span>
+                        <span class="text-e mb-3">4.0% ABV</span>
+                        <button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
+                    </div>
+                </li>
+            </div>
+        </ul>
     </section>
+    <!-- <section id="archive" class="d-flex flex-column align-items-center justify-content-center">
+        <h2 class="sectionTitle fs-1 text-center bg-a w-100 py-2">FEATURED BREWS</h2>
+        <ul class="container row">
+            <li
+                class="card card-body align-items-center text-center col-md-3 m-2 text-c bg-b border-2 border-c p-1 pb-3">
+                <img src="./assets/images/pixel_ale.webp" alt="Animations" class="img-fluid mb-3" />
+                <h5 class="card-title">Properly Pixelated</h5>
+                <h6 class="card-subtitle text-e">Juicy IPA</h6>
+                <p class="card-text text-e">
+                    Bold hops, vibrant flavors, a brew for the true enthusiast.
+                </p>
+                <span class="card-subtitle">5.9% ABV</span>
+                <a href="#" class="btn bg-c rounded-pill p-3 py-2 mx-auto">Buy Now</a>
+            </li>
+            <li
+                class="card card-body align-items-center text-center col-md-3 m-2 text-c bg-b border-2 border-c p-1 pb-3">
+                <img src="./assets/images/beer_generic.webp" alt="Animations" class="img-fluid mb-3" />
+                <h5 class="card-title">Snowbird Lager</h5>
+                <h6 class="card-subtitle text-e">Canadian Lager</h6>
+                <p class="card-text text-e">
+                    Crisp, clean, and refreshingly smooth – the perfect northern brew.
+                </p>
+                <span class="card-subtitle">5.9% ABV</span>
+                <a href="#" class="btn bg-c rounded-pill p-3 py-2 mx-auto">Buy Now</a>
+            </li>
+            <li
+                class="card card-body align-items-center text-center col-md-3 m-2 text-c bg-b border-2 border-c p-1 pb-3">
+                <img src="./assets/images/stencil_lager.webp" alt="Animations" class="img-fluid mb-3" />
+                <h5 class="card-title">Knuckle Puck(er)</h5>
+                <h6 class="card-subtitle text-e">Maple Kettle Sour</h6>
+                <p class="card-text text-e">
+                    Tangy, refreshing, with a burst of maple – taste the excitement.
+                </p>
+                <span class="card-subtitle">5.9% ABV</span>
+                <a href="#" class="btn bg-c rounded-pill p-3 py-2 mx-auto mt-3">Buy Now</a>
+            </li>
+            <li
+                class="card card-body align-items-center text-center col-md-3 m-2 text-c bg-b border-2 border-c p-1 pb-3">
+                <img src="./assets/images/pixel_ale.webp" alt="Animations" class="img-fluid mb-3" />
+                <h5 class="card-title">Properly Pixelated</h5>
+                <h6 class="card-subtitle text-e">Juicy IPA</h6>
+                <p class="card-text text-e">
+                    Bold hops, vibrant flavors, a brew for the true enthusiast.
+                </p>
+                <span class="card-subtitle">5.9% ABV</span>
+                <a href="#" class="btn bg-c rounded-pill p-3 py-2 mx-auto mt-3">Buy Now</a>
+            </li>
+            <li
+                class="card card-body align-items-center text-center col-md-3 m-2 text-c bg-b border-2 border-c p-1 pb-3">
+                <img src="./assets/images/pixel_ale.webp" alt="Animations" class="img-fluid mb-3" />
+                <h5 class="card-title">Properly Pixelated</h5>
+                <h6 class="card-subtitle text-e">Juicy IPA</h6>
+                <p class="card-text text-e">
+                    Bold hops, vibrant flavors, a brew for the true enthusiast.
+                </p>
+                <span class="card-subtitle">5.9% ABV</span>
+                <a href="#" class="btn bg-c rounded-pill p-3 py-2 mx-auto mt-3">Buy Now</a>
+            </li>
+            SPACER TO KEEP GRID ALIGNED
+            <div class="col-md-4"></div>
+        </ul>
+    </section> -->
     <section id="footer" class="text-c m-1 d-flex flex-column align-items-center">
         <footer class="w-100 d-flex flex-column align-items-center">
             <div class="row text-center d-flex justify-content-center py-3 w-100">
@@ -195,8 +406,7 @@
             </div>
             <div class="d-md-flex justify-content-between align-items-center w-75 mb-4 text-center">
                 <div href="#" class="text-d nav-link text-small d-md-flex flex-column align-items-center">
-                    <span>Monday</span><span> 11am -
-                        9pm</span>
+                    <span>Monday</span><span> Closed</span>
                 </div>
                 <div href="#" class="text-d nav-link text-small d-md-flex flex-column align-items-center">
                     <span>Tuesday</span><span> 11am -
@@ -234,7 +444,7 @@
     <!-- JS Files -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer async></script>
     <script src="./assets/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer async></script>
-    <script src="./assets/js/main.js" crossorigin="anonymous" defer async></script>
+    <script src="./assets/js/main.js" crossorigin="anonymous" defer></script>
     <script>
         document.getElementById("currentYear").textContent = new Date().getFullYear();
     </script>

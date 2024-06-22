@@ -188,5 +188,12 @@ a.text-e:hover {
 
 .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0; /* remove the gap so it doesn't close */
+}
+
+.navbar-nav .nav-link.active {
+	color: var(--main-c) !important;
+}
+
+.modal-width {
+	max-width: 80vw;
 }
