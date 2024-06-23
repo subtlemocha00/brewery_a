@@ -115,6 +115,13 @@ button.text-a:hover {
 
 a.text-e:hover {
 	color: var(--main-c);
+	background-color: var(--main-b);
+}
+
+.btn.bg-c:hover {
+	color: var(--main-c);
+	background-color: var(--main-b);
+	border: 1px solid var(--main-c);
 }
 
 .text-outline {
