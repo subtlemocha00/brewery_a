@@ -10,6 +10,15 @@
 	--main-e-rgb:  215, 246, 255;
 }
 
+@font-face {
+	font-family: 'Lato';
+	src: url('/assets/fonts/Lato-Regular.ttf') format('truetype');
+}
+  @font-face {
+	font-family: 'LatoBold';
+	src: url('/assets/fonts/Lato-Bold.ttf') format('truetype');
+  }
+
 *,
 *::before,
 *::after {
@@ -23,6 +32,7 @@
 body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
+	font-family: Lato;
 }
 a {
 	text-decoration: none;
@@ -116,10 +126,20 @@ button.text-a:hover {
 
 a.text-e:hover {
 	color: var(--main-c);
-	background-color: var(--main-b);
+	/* background-color: var(--main-b); */
 }
 
-.btn.bg-c:hover {
+div.btn.text-c:hover {
+	color: var(--main-b);
+	background-color: var(--main-c);
+}
+
+a.text-d:hover {
+	color: var(--main-c);
+	/* background-color: var(--main-b); */
+}
+
+a.btn.bg-c:hover {
 	color: var(--main-c);
 	background-color: var(--main-b);
 	border: 1px solid var(--main-c);

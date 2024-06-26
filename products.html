@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SIP NATION | PRODUCTS</title>
+    <title>SIP NATION | BEERS</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/56b718db2c.js" crossorigin="anonymous"></script>
@@ -45,10 +45,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item px-1">
-                            <a class="nav-link text-e active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link text-e" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item px-1">
-                            <a class="nav-link text-e" href="./products.html">Menu</a>
+                            <a class="nav-link text-e active" href="./products.html">Menu</a>
                         </li>
                         <li class="nav-item px-1 dropdown p-1">
                             <a class="nav-link text-e dropdown-toggle py-1" href="#">Hours</a>
@@ -174,6 +174,11 @@
                                     hoppy
                                     finish. Perfect for those who crave a well-balanced, refreshing brew.
                                 </p>
+                                <div class="row my-4">
+                                    <div class="col mx-2 btn bg-b text-c border-c">Single</div>
+                                    <div class="col mx-2 btn bg-b text-c border-c text-nowrap">6-Pack</div>
+                                    <div class="col mx-2 btn bg-b text-c border-c text-nowrap">24-Pack</div>
+                                </div>
                                 <a href="#" class="btn bg-c rounded-pill p-3 px-5 mx-auto mt-3">Beer Me</a>
                             </div>
                         </div>
@@ -190,24 +195,22 @@
                     </div>
                 </li>
             </div>
-            <div class="modal fade" id="modalB" tabindex="-1" aria-labelledby="e" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-width border-c">
-                    <div class="modal-content bg-b p-4 container row mx-auto h-auto">
-                        <div class="col-12 col-md-5 mb-2 border-c p-1">
+            <div class="modal fade" id="modalB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-width border-c container row mx-auto bg-b"
+                    role="document">
+                    <div class="modal-content bg-b border-0 p-3 d-flex flex-md-row">
+                        <div class="col-12 col-md-5 mb-2 border-c">
                             <img class="img-fit" src="./assets/images/beer_generic.webp" alt="product image">
                         </div>
                         <div class="col-12 col-md-7 mt-2 mt-md-0 d-flex flex-column ps-md-5">
                             <div>
-                                <h2>Snowbird Lager</h2>
+                                <h2 class="">Snowbird Lager</h2>
                                 <h4 class="text-e">Canadian Lager</h4>
                                 <h6 class="text-e">5.0% ABV</h6>
+                                <p class="mt-2">Crisp and clean, this Canadian Lager offers a refreshing escape with its
+                                    light body and smooth finish, ideal for any occasion.</p>
+                                <a href="#" class="btn bg-c rounded-pill p-3 px-5 mx-auto mt-3">Beer Me</a>
                             </div>
-
-                            <p class="mt-2">A vibrant Juicy IPA bursting with tropical fruit flavors and a smooth,
-                                hoppy
-                                finish. Perfect for those who crave a well-balanced, refreshing brew.
-                            </p>
-                            <a href="#" class="btn bg-c rounded-pill p-3 px-5 mx-auto mt-3">Beer Me</a>
                         </div>
                     </div>
                 </div>
@@ -222,24 +225,22 @@
                     </div>
                 </li>
             </div>
-            <div class="modal fade" id="modalC" tabindex="-1" aria-labelledby="ex" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-width border-c">
-                    <div class="modal-content bg-b p-4 container row mx-auto h-auto">
-                        <div class="col-12 col-md-5 mb-2 border-c p-1">
+            <div class="modal fade" id="modalC" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-width border-c container row mx-auto bg-b"
+                    role="document">
+                    <div class="modal-content bg-b border-0 p-3 d-flex flex-md-row">
+                        <div class="col-12 col-md-5 mb-2 border-c">
                             <img class="img-fit" src="./assets/images/stencil_lager.webp" alt="product image">
                         </div>
                         <div class="col-12 col-md-7 mt-2 mt-md-0 d-flex flex-column ps-md-5">
                             <div>
-                                <h2>Properly Pixelated</h2>
-                                <h4 class="text-e">Juicy IPA</h4>
-                                <h6 class="text-e">5.9% ABV</h6>
+                                <h2 class="">Knuckle Puck(er)</h2>
+                                <h4 class="text-e">Maple Kettle Sour</h4>
+                                <h6 class="text-e">4.0% ABV</h6>
+                                <p class="mt-2">A unique blend of tart and sweet, this Maple Kettle Sour delivers a
+                                    puckering punch with a hint of maple, making every sip an adventure.</p>
+                                <a href="#" class="btn bg-c rounded-pill p-3 px-5 mx-auto mt-3">Beer Me</a>
                             </div>
-
-                            <p class="mt-2">A vibrant Juicy IPA bursting with tropical fruit flavors and a smooth,
-                                hoppy
-                                finish. Perfect for those who crave a well-balanced, refreshing brew.
-                            </p>
-                            <a href="#" class="btn bg-c rounded-pill p-3 px-5 mx-auto mt-3">Beer Me</a>
                         </div>
                     </div>
                 </div>
@@ -251,45 +252,122 @@
                 <li class="card p-1 bg-b rounded-0 border-c h-100">
                     <img src="./assets/images/can_a.png" alt="Properly Pixelated" class="img-fit-h p-1 fade-in">
                     <div class="card-body text-c d-flex flex-column h-100">
-                        <h5 class="fw-bold">Properly Pixelated</h5>
-                        <span class="">Juicy IPA</span>
-                        <span class="text-e mg-3">5.9% ABV</span>
-                        <button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
+                        <h5 class="fw-bold">Blazing Trails</h5>
+                        <button id="" class="btn text-a border-a rounded-0 mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#modalD">More Info</button>
                     </div>
                 </li>
+            </div>
+            <div class="modal fade" id="modalD" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-width border-c container row mx-auto bg-b"
+                    role="document">
+                    <div class="modal-content bg-b border-0 p-3 d-flex flex-md-row">
+                        <div class="col-12 col-md-5 mb-2 border-c">
+                            <img class="img-fit" src="./assets/images/can_a.png" alt="product image">
+                        </div>
+                        <div class="col-12 col-md-7 mt-2 mt-md-0 d-flex flex-column ps-md-5">
+                            <div>
+                                <h2 class="">Blazing Trails</h2>
+                                <h4 class="text-e">American Pale Ale</h4>
+                                <h6 class="text-e">5.5% ABV</h6>
+                                <p class="mt-2">An American Pale Ale with a bold hop character, complemented by citrus
+                                    and pine notes. Perfect for those who love a classic, flavorful brew.</p>
+                                <a href="#" class="btn bg-c rounded-pill p-3 px-5 mx-auto mt-3">Beer Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-md-4 my-3">
                 <li class="card p-1 bg-b rounded-0 border-c h-100">
                     <img src="./assets/images/moon_can_a.png" alt="Snowbird Lager" class="img-fit-h p-1 fade-in">
                     <div class="card-body text-c d-flex flex-column h-100">
-                        <h5 class="fw-bold">Snowbird Lager</h5>
-                        <span class="">Canadian Lager</span>
-                        <span class="text-e mb-3">5.0% ABV</span>
-                        <button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
+                        <h5 class="fw-bold">Midnight Rambler</h5>
+                        <button id="" class="btn text-a border-a rounded-0 mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#modalE">More Info</button>
                     </div>
                 </li>
+            </div>
+            <div class="modal fade" id="modalE" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-width border-c container row mx-auto bg-b"
+                    role="document">
+                    <div class="modal-content bg-b border-0 p-3 d-flex flex-md-row">
+                        <div class="col-12 col-md-5 mb-2 border-c">
+                            <img class="img-fit" src="./assets/images/moon_can_a.png" alt="product image">
+                        </div>
+                        <div class="col-12 col-md-7 mt-2 mt-md-0 d-flex flex-column ps-md-5">
+                            <div>
+                                <h2 class="">Midnight Rambler</h2>
+                                <h4 class="text-e">Imperial Stout</h4>
+                                <h6 class="text-e">9.0% ABV</h6>
+                                <p class="mt-2">Rich and robust, this Imperial Stout boasts deep chocolate and coffee
+                                    flavors with a velvety smooth finish. A true indulgence for stout enthusiasts.</p>
+                                <a href="#" class="btn bg-c rounded-pill p-3 px-5 mx-auto mt-3">Beer Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-md-4 my-3">
                 <li class="card p-1 bg-b rounded-0 border-c h-100">
                     <img src="./assets/images/devil_can_a.png" alt="Knuckle Pucker" class="img-fit-h p-1 fade-in">
                     <div class="card-body text-c d-flex flex-column">
-                        <h5 class="fw-bold">Knuckle Puck(er)</h5>
-                        <span class="">Maple Kettle Sour</span>
-                        <span class="text-e mb-3">4.0% ABV</span>
-                        <button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
+                        <h5 class="fw-bold">Devil's Delight</h5>
+                        <button id="" class="btn text-a border-a rounded-0 mt-auto" data-bs-toggle="modal"
+                            data-bs-target="#modalF">More Info</button>
                     </div>
                 </li>
+            </div>
+            <div class="modal fade" id="modalF" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-width border-c container row mx-auto bg-b"
+                    role="document">
+                    <div class="modal-content bg-b border-0 p-3 d-flex flex-md-row">
+                        <div class="col-12 col-md-5 mb-2 border-c">
+                            <img class="img-fit" src="./assets/images/devil_can_a.png" alt="product image">
+                        </div>
+                        <div class="col-12 col-md-7 mt-2 mt-md-0 d-flex flex-column ps-md-5">
+                            <div>
+                                <h2 class="">Devil's Delight</h2>
+                                <h4 class="text-e">Belgian Dubbel</h4>
+                                <h6 class="text-e">7.5% ABV</h6>
+                                <p class="mt-2">A rich and malty Belgian Dubbel with notes of dark fruit, caramel, and a
+                                    touch of spice. This devilishly delightful brew is smooth and warming, perfect for
+                                    savoring slowly.</p>
+                                <a href="#" class="btn bg-c rounded-pill p-3 px-5 mx-auto mt-3">Beer Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-md-4 my-3">
                 <li class="card p-1 bg-b rounded-0 border-c h-100">
                     <img src="./assets/images/can_b.png" alt="Properly Pixelated" class="img-fit-h p-1 fade-in">
                     <div class="card-body text-c d-flex flex-column h-100">
-                        <h5 class="fw-bold">Properly Pixelated</h5>
-                        <span class="">Juicy IPA</span>
-                        <span class="text-e mg-3">5.9% ABV</span>
+                        <h5 class="fw-bold">Golden Grove</h5>
+                        <h6 class="text-e">Blonde Ale</h6>
                         <button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
                     </div>
                 </li>
+            </div>
+            <div class="modal fade" id="modalG" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-width border-c container row mx-auto bg-b"
+                    role="document">
+                    <div class="modal-content bg-b border-0 p-3 d-flex flex-md-row">
+                        <div class="col-12 col-md-5 mb-2 border-c">
+                            <img class="img-fit" src="./assets/images/devil_can_a.png" alt="product image">
+                        </div>
+                        <div class="col-12 col-md-7 mt-2 mt-md-0 d-flex flex-column ps-md-5">
+                            <div>
+                                <h2 class="">Devil's Delight</h2>
+                                <h4 class="text-e">Blonde Ale</h4>
+                                <h6 class="text-e">4.8% ABV</h6>
+                                <p class="mt-2">Light and refreshing, this Blonde Ale features a subtle malt sweetness
+                                    and a crisp, clean finish. An easy-drinking beer for any time of the day.</p>
+                                <a href="#" class="btn bg-c rounded-pill p-3 px-5 mx-auto mt-3">Beer Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-12 col-md-4 my-3">
                 <li class="card p-1 bg-b rounded-0 border-c h-100">
@@ -315,11 +393,11 @@
             </div>
             <div class="col-12 col-md-4 my-3">
                 <li class="card p-1 bg-b rounded-0 border-c h-100">
-                    <img src="./assets/images/three_cans_c.png" alt="Knuckle Pucker" class="img-fit-h p-1 fade-in">
+                    <img src="./assets/images/frogue_a.png" alt="Knuckle Pucker" class="img-fit-h p-1 fade-in">
                     <div class="card-body text-c d-flex flex-column">
-                        <h5 class="fw-bold">Knuckle Puck(er)</h5>
-                        <span class="">Maple Kettle Sour</span>
-                        <span class="text-e mb-3">4.0% ABV</span>
+                        <h5 class="fw-bold">Frogue</h5>
+                        <span class="">Psychedelic Lager</span>
+                        <span class="text-e mb-3">8.0% ABV</span>
                         <button id="" class="btn text-a border-a rounded-0 mt-auto">More Info</button>
                     </div>
                 </li>
@@ -343,44 +421,44 @@
     <section id="footer" class="text-c m-1 d-flex flex-column align-items-center">
         <footer class="w-100 d-flex flex-column align-items-center">
             <div class="row text-center d-flex justify-content-center py-3 w-100">
-                <div class="col-sm-2 btn">
-                    <a href="./index.html" class="text-d nav-link">HOME</a>
+                <div class="col-sm-auto">
+                    <a href="./index.html" class="text-e">HOME</a>
                 </div>
-                <div class="col-sm-2 btn">
-                    <a href="./products.html" class="text-e nav-link">MENU</a>
+                <div class="col-sm-auto">
+                    <a href="./products.html" class="text-d">MENU</a>
                 </div>
-                <div class="col-sm-2 btn">
-                    <a href="#" class="text-d nav-link">EVENTS</a>
+                <div class="col-sm-auto">
+                    <a href="#" class="text-d">EVENTS</a>
                 </div>
-                <div class="col-sm-4 btn">
-                    <a href="./index#contact" class="text-d nav-link">CONTACT US</a>
+                <div class="col-sm-auto">
+                    <a href="./index#contact" class="text-d">CONTACT US</a>
                 </div>
             </div>
             <div class="d-md-flex justify-content-between align-items-center w-75 mb-4 text-center">
-                <div href="#" class="text-d nav-link text-small d-md-flex flex-column align-items-center">
+                <div href="#" class="text-d text-small d-md-flex flex-column align-items-center">
                     <span>Monday</span><span> Closed</span>
                 </div>
-                <div href="#" class="text-d nav-link text-small d-md-flex flex-column align-items-center">
+                <div href="#" class="text-d text-small d-md-flex flex-column align-items-center">
                     <span>Tuesday</span><span> 11am -
                         9pm</span>
                 </div>
-                <div href="#" class="text-d nav-link text-small d-md-flex flex-column align-items-center">
+                <div href="#" class="text-d text-small d-md-flex flex-column align-items-center">
                     <span>Wednesday</span><span> 11am -
                         9pm</span>
                 </div>
-                <div href="#" class="text-d nav-link text-small d-md-flex flex-column align-items-center">
+                <div href="#" class="text-d text-small d-md-flex flex-column align-items-center">
                     <span>Thursday</span><span> 11am -
                         9pm</span>
                 </div>
-                <div href="#" class="text-d nav-link text-small d-md-flex flex-column align-items-center">
+                <div href="#" class="text-d text-small d-md-flex flex-column align-items-center">
                     <span>Friday</span><span> 11am -
                         9pm</span>
                 </div>
-                <div href="#" class="text-d nav-link text-small d-md-flex flex-column align-items-center">
+                <div href="#" class="text-d text-small d-md-flex flex-column align-items-center">
                     <span>Saturday</span><span> 11am -
                         9pm</span>
                 </div>
-                <div href="#" class="text-d nav-link text-small d-md-flex flex-column align-items-center">
+                <div href="#" class="text-d text-small d-md-flex flex-column align-items-center">
                     <span>Sunday</span><span> 11am -
                         9pm</span>
                 </div>
