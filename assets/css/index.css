@@ -225,3 +225,8 @@ a.btn.bg-c:hover {
 .modal-width {
 	max-width: 80vw;
 }
+
+.selected {
+	background-color: var(--main-c);
+	color: var(--main-b);
+}

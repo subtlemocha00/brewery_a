@@ -25,3 +25,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sizeButtons = document.querySelectorAll('.size');
+    sizeButtons.forEach(div => {
+        div.addEventListener('click', function () {
+            sizeButtons.forEach(d => d.classList.remove('selected'));
+            this.classList.add('selected');
+        });
+    });
+})
