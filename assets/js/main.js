@@ -35,3 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    const newDate = new Date();
+    const currentDay = newDate.getDay() - 1;
+    const weekDays = document.querySelectorAll('.weekDay');
+    weekDays[currentDay].classList.add('highlight')
+})

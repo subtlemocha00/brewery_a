@@ -63,6 +63,19 @@ h6 {
 	overflow-wrap: break-word;
 }
 
+input.form-control, textarea.form-control {
+	color: var(--main-c);
+}
+
+input.form-control:focus, textarea.form-control:focus {
+	color: var(--main-c);
+	background-color: var(--main-b);
+}
+
+label::after {
+	background-color: var(--main-b);
+}
+
 #root,
 #__next {
 	isolation: isolate;
@@ -193,7 +206,7 @@ a.btn.bg-c:hover {
 
 .overlay {
 	background-color: rgba(0, 0, 0, 0.5);
-	color: white;
+	/* color: white; */
 	padding: 50px;
 }
 
@@ -229,4 +242,8 @@ a.btn.bg-c:hover {
 .selected {
 	background-color: var(--main-c);
 	color: var(--main-b);
+}
+
+.highlight {
+	color: var(--main-c);
 }
