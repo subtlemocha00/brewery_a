@@ -39,6 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const newDate = new Date();
     const currentDay = newDate.getDay() - 1;
-    const weekDays = document.querySelectorAll('.weekDay');
-    weekDays[currentDay].classList.add('highlight')
+    const weekdayDivs = document.querySelectorAll('.weekDay');
+    weekdayDivs[currentDay].classList.add('highlight')
 })

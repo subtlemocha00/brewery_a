@@ -59,7 +59,7 @@
                         <li class="nav-item px-1 dropdown p-1">
                             <a class="nav-link text-e dropdown-toggle py-1" href="#">Hours</a>
                             <ul class="dropdown-menu overlay p-2 end-0">
-                                <li class="text-e d-flex text-nowrap justify-content-between">
+                                <li class="text-e d-flex text-nowrap justify-content-between weekDay">
                                     <div class="">
                                         <span class="">Monday</span>
                                     </div>
@@ -67,7 +67,7 @@
                                         <span class="text-right">Closed</span>
                                     </div>
                                 </li>
-                                <li class="text-e d-flex text-nowrap justify-content-between">
+                                <li class="text-e d-flex text-nowrap justify-content-between weekDay">
                                     <div>
                                         <span class="">Tuesday</span>
                                     </div>
@@ -75,7 +75,7 @@
                                         <span class="">11:00 - 21:00</span>
                                     </div>
                                 </li>
-                                <li class="text-e d-flex text-nowrap justify-content-between">
+                                <li class="text-e d-flex text-nowrap justify-content-between weekDay weekDay">
                                     <div>
                                         <span class="me-3">Wednesday</span>
                                     </div>
@@ -83,31 +83,31 @@
                                         <span class="">11:00 - 21:00</span>
                                     </div>
                                 </li>
-                                <li class="text-e d-flex text-nowrap justify-content-between">
-                                    <div>
+                                <li class="text-e d-flex text-nowrap justify-content-between weekDay">
+                                    <div class="">
                                         <span class="">Thursday</span>
                                     </div>
-                                    <div>
+                                    <div class="">
                                         <span class="">11:00 - 21:00</span>
                                     </div>
                                 </li>
-                                <li class="text-e d-flex text-nowrap justify-content-between">
-                                    <div>
+                                <li class="text-e d-flex text-nowrap justify-content-between weekDay">
+                                    <div class="">
                                         <span class="">Friday</span>
                                     </div>
                                     <div>
                                         <span class="">10:00 - 21:00</span>
                                     </div>
                                 </li>
-                                <li class="text-e d-flex text-nowrap justify-content-between">
-                                    <div>
-                                        <span class="">Saturday</span>
+                                <li class="text-e d-flex text-nowrap justify-content-between weekDay">
+                                    <div class="">
+                                        <span>Saturday</span>
                                     </div>
-                                    <div>
+                                    <div class="">
                                         <span class="">10:00 - 23:00</span>
                                     </div>
                                 </li>
-                                <li class="text-e d-flex text-nowrap justify-content-between">
+                                <li class="text-e d-flex text-nowrap justify-content-between weekDay">
                                     <div>
                                         <span class="">Sunday</span>
                                     </div>
@@ -115,7 +115,6 @@
                                         <span class="">11:00 - 18:00</span>
                                     </div>
                                 </li>
-
                             </ul>
                         </li>
                         <!-- <li class="nav-item btn bg-a ms-0 me-2 p-0">
@@ -142,11 +141,6 @@
         <div class="bg-b w-100 text-center mb-4">
             <h2 class="fw-bold m-0">Featured Brews</h2>
         </div>
-
-        <!-- add modals when More Info button is clicked -->
-        <!-- should include beer name, image, style, ABV, description, price, quantity available -->
-        <!-- i.e. single can, 6-pack, 24. future add to cart button -->
-
         <ul class="container row justify-content-around d-md-flex text-center">
             <div class="col-12 col-md-4 my-3">
                 <li class="card p-1 bg-b rounded-0 border-c h-100">
@@ -166,7 +160,7 @@
                             <img class="img-fit" src="./assets/images/pixel_ale.webp" alt="product image">
                         </div>
                         <div class="col-12 col-md-7 mt-2 mt-md-0 d-flex flex-column ps-md-5">
-                            <div>
+                            <div class="beer-item" data-id="b1">
                                 <h2 class="">Properly Pixelated</h2>
                                 <h4 class="text-e">Juicy IPA</h4>
                                 <h6 class="text-e">5.9% ABV</h6>
@@ -179,7 +173,18 @@
                                     <div class="size col btn bg-b text-c border-c text-nowrap">6-Pack</div>
                                     <div class="size col btn bg-b text-c border-c text-nowrap">24-Pack</div>
                                 </div>
-                                <a href="#" class="btn bg-c rounded-pill p-3 px-5 mx-auto mt-3">Add to Cart</a>
+                                <div class="row">
+                                    <button class="btn btn-primary rounded-circle w-auto"><i
+                                            class="fas fa-minus"></i></button>
+                                    <label class="visually-hidden form-check-label" for="b1">
+                                        Quantity
+                                    </label>
+                                    <input id="b1" data-id="b1" type="number" value="1" min="1" max="100"
+                                        class="w-auto text-center">
+                                    <button class="btn btn-primary rounded-circle w-auto" onclick=""><i
+                                            class="fas fa-plus"></i></button>
+                                </div>
+                                <a href="#" class="btn bg-c rounded-pill p-sm-3 px-sm-5 mx-auto mt-3">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -203,13 +208,29 @@
                             <img class="img-fit" src="./assets/images/beer_generic.webp" alt="product image">
                         </div>
                         <div class="col-12 col-md-7 mt-2 mt-md-0 d-flex flex-column ps-md-5">
-                            <div>
+                            <div class="beer-item" data-id="b2">
                                 <h2 class="">Snowbird Lager</h2>
                                 <h4 class="text-e">Canadian Lager</h4>
                                 <h6 class="text-e">5.0% ABV</h6>
                                 <p class="mt-2">Crisp and clean, this Canadian Lager offers a refreshing escape with its
                                     light body and smooth finish, ideal for any occasion.</p>
-                                <a href="#" class="btn bg-c rounded-pill p-3 px-5 mx-auto mt-3">Add to Cart</a>
+                                <div class="row my-4 justify-content-between">
+                                    <div class="size col btn bg-b text-c border-c text-nowrap">Single</div>
+                                    <div class="size col btn bg-b text-c border-c text-nowrap">6-Pack</div>
+                                    <div class="size col btn bg-b text-c border-c text-nowrap">24-Pack</div>
+                                </div>
+                                <div class="row">
+                                    <button class="btn btn-primary rounded-circle w-auto"><i
+                                            class="fas fa-minus"></i></button>
+                                    <label class="visually-hidden form-check-label" for="b2">
+                                        Quantity
+                                    </label>
+                                    <input id="b2" data-id="b2" type="number" value="1" min="1" max="100"
+                                        class="w-auto text-center">
+                                    <button class="btn btn-primary rounded-circle w-auto" onclick=""><i
+                                            class="fas fa-plus"></i></button>
+                                </div>
+                                <a href="#" class="btn bg-c rounded-pill p-sm-3 px-sm-5 mx-auto mt-3">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -233,7 +254,7 @@
                             <img class="img-fit" src="./assets/images/stencil_lager.webp" alt="product image">
                         </div>
                         <div class="col-12 col-md-7 mt-2 mt-md-0 d-flex flex-column ps-md-5">
-                            <div>
+                            <div class="beer-item" data-id="b3">
                                 <h2 class="">Knuckle Puck(er)</h2>
                                 <h4 class="text-e">Maple Kettle Sour</h4>
                                 <h6 class="text-e">4.0% ABV</h6>
@@ -605,6 +626,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer async></script>
     <script src="./assets/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer async></script>
     <script src="./assets/js/main.js" crossorigin="anonymous" defer></script>
+    <script src="./assets/js/products.js" crossorigin="anonymous" defer></script>
     <script>
         document.getElementById("currentYear").textContent = new Date().getFullYear();
     </script>
