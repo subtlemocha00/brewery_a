@@ -63,13 +63,33 @@ h6 {
 	overflow-wrap: break-word;
 }
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+input.form-control:-webkit-autofill,
+input.form-control:-webkit-autofill:hover, 
+input.form-control:-webkit-autofill:focus,
+textarea.form-control:-webkit-autofill,
+textarea.form-control:-webkit-autofill:hover,
+textarea.form-control:-webkit-autofill:focus {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: var(--main-e);
+	-webkit-box-shadow: 0 0 0 50px var(--main-b) inset;
+};
+
 input.form-control, textarea.form-control {
-	color: var(--main-c);
+	color: var(--main-e);
 }
 
 input.form-control:focus, textarea.form-control:focus {
-	color: var(--main-c);
+	outline: none !important;
+	box-shadow: none;
+	color: var(--main-e) !important;
 	background-color: var(--main-b);
+	border: 1px solid var(--main-c);
 }
 
 label::after {
@@ -85,6 +105,15 @@ label::after {
 	font-size: .75rem;
 }
 
+::placeholder {
+	color: var(--main-e) !important;
+	opacity: 1; /* Firefox */
+}
+  
+::-ms-input-placeholder { /* Edge 12 -18 */
+	color: var(--main-e) !important;
+}
+
 .bg-a {
 	background-color: var(--main-a);
 }
@@ -95,6 +124,12 @@ label::after {
 
 .border-a {
 	border: 1px solid var(--main-a);
+}
+
+button.border-a:focus {
+	color: var(--main-b);
+	border: 1px solid var(--main-a);
+	background-color: var(--main-a);
 }
 
 .bg-b {
@@ -109,6 +144,10 @@ label::after {
 }
 
 .border-c {
+	border: 1px solid var(--main-c);
+}
+
+.btn.bg-c:hover {
 	border: 1px solid var(--main-c);
 }
 
@@ -139,7 +178,6 @@ button.text-a:hover {
 
 a.text-e:hover {
 	color: var(--main-c);
-	/* background-color: var(--main-b); */
 }
 
 div.btn.text-c:hover {
@@ -149,7 +187,6 @@ div.btn.text-c:hover {
 
 a.text-d:hover {
 	color: var(--main-c);
-	/* background-color: var(--main-b); */
 }
 
 a.btn.bg-c:hover {
@@ -181,7 +218,7 @@ a.btn.bg-c:hover {
 }
 
 .bg-home {
-	background-image: url('../images/friends_drinks_a.png'); /* Replace with your image URL */
+	background-image: url('../images/friends_drinks_a.png');
 }
 
 .bg-events {
@@ -206,7 +243,6 @@ a.btn.bg-c:hover {
 
 .overlay {
 	background-color: rgba(0, 0, 0, 0.5);
-	/* color: white; */
 	padding: 50px;
 }
 
