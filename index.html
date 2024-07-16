@@ -5,14 +5,14 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>SIP NATION | HOME</title>
-	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" defer />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	<script src="https://kit.fontawesome.com/56b718db2c.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/56b718db2c.js" crossorigin="anonymous" defer></script>
 	<link rel="stylesheet" href="./assets/css/index.css" />
 </head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6YJZ8V19N"></script>
-<script>
+<script src="https://www.googletagmanager.com/gtag/js?id=G-T6YJZ8V19N" defer></script>
+<script defer>
 	window.dataLayer = window.dataLayer || [];
 	function gtag() {
 		dataLayer.push(arguments);
@@ -22,7 +22,7 @@
 	gtag("config", "G-T6YJZ8V19N");
 </script>
 
-<body class="bg-b text-light">
+<body class="bg-b text-e">
 	<section class="mb-4">
 
 		<div
@@ -59,6 +59,14 @@
 						<li class="nav-item px-1 dropdown p-1">
 							<a class="nav-link text-e dropdown-toggle py-1" href="#">Hours</a>
 							<ul class="dropdown-menu overlay p-2 end-0">
+								<li class="text-e d-flex text-nowrap justify-content-between weekDay">
+									<div>
+										<span class="">Sunday</span>
+									</div>
+									<div>
+										<span class="">11:00 - 18:00</span>
+									</div>
+								</li>
 								<li class="text-e d-flex text-nowrap justify-content-between weekDay">
 									<div class="">
 										<span class="">Monday</span>
@@ -107,14 +115,6 @@
 										<span class="">10:00 - 23:00</span>
 									</div>
 								</li>
-								<li class="text-e d-flex text-nowrap justify-content-between weekDay">
-									<div>
-										<span class="">Sunday</span>
-									</div>
-									<div>
-										<span class="">11:00 - 18:00</span>
-									</div>
-								</li>
 
 							</ul>
 						</li>
@@ -144,17 +144,17 @@
 		<div class="bg-b w-100 text-center mb-4">
 			<h2 class="fw-bold m-0 text-c">About</h2>
 		</div>
-		<article class="container text-center text-md-start text-c">
+		<article class="container text-center text-md-start text-d">
 			<div class="d-md-none mb-3">
-				<img src="./assets/images/beer_bear.png" alt="Relax at our beauty parlor" class="img-fit-h figure-img"
+				<img src="./assets/images/beer_bear.webp" alt="Relax at our beauty parlor" class="img-fit-h figure-img"
 					height="300">
-				<figcaption class="text-e figure-caption">Cheers!
+				<figcaption class="text-c figure-caption">Cheers!
 				</figcaption>
 			</div>
 			<div class="float-md-start me-md-4 d-none d-md-block">
-				<img src="./assets/images/beer_bear.png" alt="Relax at our beauty parlor" class="img-fit-h figure-img"
+				<img src="./assets/images/beer_bear.webp" alt="Relax at our beauty parlor" class="img-fit-h figure-img"
 					height="500">
-				<figcaption class="text-e figure-caption text-center">Cheers!
+				<figcaption class="text-c figure-caption text-center">Cheers!
 				</figcaption>
 			</div>
 			<p>
@@ -195,75 +195,95 @@
 		<ul class="container row justify-content-around d-md-flex text-center">
 			<div class="col-12 col-md-4 my-3">
 				<li class="card p-1 bg-b rounded-0 border-c h-100">
-					<img src="./assets/images/pixel_ale.webp" alt="Properly Pixelated" class="img-fit p-1 fade-in">
+					<img loading="lazy" src="./assets/images/pixel_ale.webp" alt="Properly Pixelated"
+						class="img-fit p-1 fade-in">
 					<div class="card-body text-c d-flex flex-column h-100">
 						<h5 class="fw-bold">Properly Pixelated</h5>
 						<span class="">Juicy IPA</span>
-						<span class="text-e mg-3">5.9% ABV</span>
-						<a href="./products.html" id="" class="btn text-a border-a rounded-0 mt-auto">See Beers</a>
+						<span class="text-e">5.9% ABV</span>
+						<!-- <a href="./products.html" id="" class="btn text-a border-a rounded-0 mt-auto">See Beers</a> -->
 					</div>
 				</li>
 			</div>
 			<div class="col-12 col-md-4 my-3">
 				<li class="card p-1 bg-b rounded-0 border-c h-100">
-					<img src="./assets/images/beer_generic.webp" alt="Snowbird Lager" class="img-fit p-1 fade-in">
+					<img loading="lazy" src="./assets/images/beer_generic.webp" alt="Snowbird Lager"
+						class="img-fit p-1 fade-in">
 					<div class="card-body text-c d-flex flex-column h-100">
 						<h5 class="fw-bold">Snowbird Lager</h5>
 						<span class="">Canadian Lager</span>
-						<span class="text-e mb-3">5.0% ABV</span>
-						<a href="./products.html" id="" class="btn text-a border-a rounded-0 mt-auto">See Beers</a>
+						<span class="text-e">5.0% ABV</span>
+						<!-- <a href="./products.html" id="" class="btn text-a border-a rounded-0 mt-auto">See Beers</a> -->
 					</div>
 				</li>
 			</div>
 			<div class="col-12 col-md-4 my-3">
 				<li class="card p-1 bg-b rounded-0 border-c h-100">
-					<img src="./assets/images/stencil_lager.webp" alt="Knuckle Pucker" class="img-fit p-1 fade-in">
+					<img loading="lazy" src="./assets/images/stencil_lager.webp" alt="Knuckle Pucker"
+						class="img-fit p-1 fade-in">
 					<div class="card-body text-c d-flex flex-column">
 						<h5 class="fw-bold">Knuckle Puck(er)</h5>
 						<span class="">Maple Kettle Sour</span>
-						<span class="text-e mb-3">4.0% ABV</span>
-						<a href="./products.html" id="" class="btn text-a border-a rounded-0 mt-auto">See Beers</a>
+						<span class="text-e">4.0% ABV</span>
+						<!-- <a href="./products.html" id="" class="btn text-a border-a rounded-0 mt-auto">See Beers</a> -->
 					</div>
 				</li>
 			</div>
+			<a href="./products.html" id="" class="btn text-a border-a rounded-0 my-4 p-3 w-auto">View Selection</a>
 		</ul>
 	</section>
+	<section id="upcomingEvents" class="d-flex flex-column justify-content-center align-items-center text-c">
+		<hr class="text-e w-100 mx-5" style="border-width: 3px;">
+		<div class="bg-b w-100 text-center mb-4">
+			<h2 class="fw-bold m-0">Next Event</h2>
+		</div>
 
-	<!-- make a separate contact page, inviting people to inquire about parties, reservations -->
+		<!-- add modals when More Info button is clicked -->
+		<!-- should include beer name, image, style, ABV, description, price, quantity available -->
+		<!-- i.e. single can, 6-pack, 24. future add to cart button -->
 
-	<section id="contact" class="d-flex flex-column align-items-center w-100 px-0 mt-5">
-		<div class="container m-md-3 my-5 rounded-3 px-0">
-			<div class="card p-3 shadow-lg bg-b">
-				<div class="card-body">
-					<h2 class="text-c">Get In Touch</h2>
-					<p class="lead text-c">Have questions? Reach out to us anytime!</p>
-					<form action="" method="" class="d-flex flex-column justify-content-center d-md-block">
-						<div class="row form-floating mb-3">
-							<input id="full-name" name="full-name" class="form-control border-c bg-b" type="text"
-								placeholder="Full Name" required>
-							<label class="form-label text-e" for="full-name">Full Name*</label>
-						</div>
-						<div class="row form-floating mb-3">
-							<input id="email" name="email" class="form-control border-c bg-b" type="email"
-								placeholder="Email" required>
-							<label class="form-label text-e" for="email">Email*</label>
-						</div>
-						<div class="row form-floating mb-3">
-							<input id="subject" name="subject" class="form-control border-c bg-b" type="text"
-								placeholder="Subject" required>
-							<label class="form-label text-e" for="subject">Subject*</label>
-						</div>
-						<div class="row form-floating mb-3">
-							<textarea id="message" name="message" class="form-control border-c bg-b"
-								style="height: 150px;" type="text" placeholder="Message..." required></textarea>
-							<label class="form-label text-e" for="message">Message*</label>
-						</div>
-						<button class="btn text-a border-a rounded-0 mt-auto mx-auto px-5">Submit</button>
-					</form>
+		<!-- <ul class="container row justify-content-around d-md-flex text-center"> -->
+		<div class="col-12 col-md-4 my-3 p-3 p-md-0">
+			<div class="card p-1 bg-b rounded-0 border-c h-100">
+				<img loading="lazy" src="./assets/images/farm_to_turntable.png" alt="Properly Pixelated"
+					class="img-fit p-1 fade-in">
+				<div class="card-body text-c d-flex flex-column h-100">
+					<h3>DJ Farm to [Turn]Table</h3>
+					<h4 class="text-e">Thursday July 18, 2024</h4>
+					<h6 class="text-e">Doors: 7:00 pm</h6>
 				</div>
+				<a href="./events.html#eventA" class="stretched-link"></a>
 			</div>
 		</div>
+		<a href="./events.html" id="" class="btn text-a border-a rounded-0 my-4 p-3 w-auto">See All Events</a>
+		<!-- <li class="col-12 col-md-4 my-3">
+			<div class="card p-1 bg-b rounded-0 border-c h-100">
+				<img loading="lazy" src="./assets/images/japan_rock.png" alt="Snowbird Lager"
+				class="img-fit p-1 fade-in">
+					<div class="card-body text-c d-flex flex-column h-100">
+						<h3>Thunderstrike</h3>
+						<h4 class="text-e">Saturday July 20, 2024</h4>
+						<h6 class="text-e">Doors: 7:30 pm</h6>
+					</div>
+					<a href="./events.html#eventB" class="stretched-link"></a>
+				</div>
+
+			</li>
+			<li class="col-12 col-md-4 my-3">
+				<div class="card p-1 bg-b rounded-0 border-c h-100">
+					<img loading="lazy" src="./assets/images/nico_tera_band.png" alt="Knuckle Pucker"
+						class="img-fit p-1 fade-in">
+					<div class="card-body text-c d-flex flex-column">
+						<h3>Nico Tera Band</h3>
+						<h4 class="text-e">Friday, July 26, 2024</h4>
+						<h6 class="text-e">Doors: 6:30 pm</h6>
+					</div>
+					<a href="./events.html#eventC" class="stretched-link"></a>
+				</div>
+			</li> -->
+		<!-- </ul> -->
 	</section>
+
 	<section id="footer" class="text-c m-1 d-flex flex-column align-items-center border-top pt-3">
 		<footer class="w-100 d-flex flex-column align-items-center">
 			<div class="row text-center d-flex justify-content-center py-3 w-100">
@@ -281,6 +301,10 @@
 				</div>
 			</div>
 			<div class="d-md-flex justify-content-between align-items-center w-75 mb-4 text-center">
+				<div href="#" class="text-d text-small d-md-flex flex-column align-items-center">
+					<span>Sunday</span><span> 11am -
+						9pm</span>
+				</div>
 				<div href="#" class="text-d text-small d-md-flex flex-column align-items-center">
 					<span>Monday</span><span> Closed</span>
 				</div>
@@ -304,13 +328,9 @@
 					<span>Saturday</span><span> 11am -
 						9pm</span>
 				</div>
-				<div href="#" class="text-d text-small d-md-flex flex-column align-items-center">
-					<span>Sunday</span><span> 11am -
-						9pm</span>
-				</div>
 			</div>
 			<div class="d-flex flex-column align-items-center">
-				<img class="mb-3" src="./assets/images/logo.png" alt="logo" height="60px">
+				<img loading="lazy" class="mb-3" src="./assets/images/logo.png" alt="logo" height="60px">
 				<p>© <span id="currentYear"></span> Sip Nation | Designed by
 					<a href="https://subtlewebstudios.com" target="_blank">Subtle Web Studios</a>
 				</p>
@@ -321,10 +341,10 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer async></script>
 	<script src="./assets/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer async></script>
 	<script src="./assets/js/main.js" crossorigin="anonymous" defer></script>
-	<script>
+	<script defer>
 		document.getElementById("currentYear").textContent = new Date().getFullYear();
 	</script>
-	<script>
+	<script defer>
 		// parallax JS script
 		window.addEventListener('scroll', function () {
 			const parallax = document.querySelector('.parallax');

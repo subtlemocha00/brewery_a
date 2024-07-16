@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIP NATION | BEERS</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" async />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" defer />
     <script src="https://kit.fontawesome.com/56b718db2c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/index.css" />
 </head>
@@ -142,9 +142,6 @@
             <h2 class="fw-bold m-0">Current Lineup</h2>
         </div>
         <ul id="productUl" class="container row justify-content-around d-md-flex text-center">
-            <!-- <div class="col-12 col-md-4 my-3"> -->
-            <!-- PLACEHOLDER TO MAINTAIN SPACING -->
-            <!-- </div> -->
         </ul>
     </section>
     <section id="footer" class="text-c m-1 d-flex flex-column align-items-center border-top pt-3">
@@ -164,6 +161,10 @@
                 </div>
             </div>
             <div class="d-md-flex justify-content-between align-items-center w-75 mb-4 text-center">
+                <div href="#" class="text-d text-small d-md-flex flex-column align-items-center">
+                    <span>Sunday</span><span> 11am -
+                        9pm</span>
+                </div>
                 <div href="#" class="text-d text-small d-md-flex flex-column align-items-center">
                     <span>Monday</span><span> Closed</span>
                 </div>
@@ -187,10 +188,6 @@
                     <span>Saturday</span><span> 11am -
                         9pm</span>
                 </div>
-                <div href="#" class="text-d text-small d-md-flex flex-column align-items-center">
-                    <span>Sunday</span><span> 11am -
-                        9pm</span>
-                </div>
             </div>
             <div class="d-flex flex-column align-items-center">
                 <img class="mb-3" src="./assets/images/logo.png" alt="logo" height="60px">
@@ -204,8 +201,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" async></script>
     <script src="./assets/js/bootstrap.bundle.min.js" crossorigin="anonymous" async></script>
     <script type="module" src="./assets/js/beerList.js" crossorigin="anonymous" async></script>
+    <!-- must run before main for fade-in effect -->
+    <script type="module" src="./assets/js/products.js" crossorigin="anonymous" defer></script>
     <script src="./assets/js/main.js" crossorigin="anonymous" defer></script>
-    <script type="module" src="./assets/js/products.js" crossorigin="anonymous" async></script>
     <script>
         document.getElementById("currentYear").textContent = new Date().getFullYear();
     </script>

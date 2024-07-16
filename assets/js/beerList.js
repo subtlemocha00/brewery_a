@@ -32,7 +32,7 @@ const beerList = [
         abv: '4.5%',
         description: 'An American Pale Ale with a bold hop character, complemented by citrus and pine notes. Perfect for those who love a classic, flavorful brew.',
         price: { single: '$3.00', six: '$12.50', case: '$45.00' },
-        image: './assets/images/can_a.png',
+        image: './assets/images/can_a.webp',
         id: '104'
     },
     {
@@ -41,7 +41,7 @@ const beerList = [
         abv: '4.5%',
         description: 'Rich and robust, this Imperial Stout boasts deep chocolate and coffee flavors with a velvety smooth finish. A true indulgence for stout enthusiasts.',
         price: { single: '$3.00', six: '$12.50', case: '$45.00' },
-        image: './assets/images/moon_can_a.png',
+        image: './assets/images/moon_can_a.webp',
         id: '105'
     },
     {
@@ -50,7 +50,7 @@ const beerList = [
         abv: '7.5%',
         description: 'A rich and malty Belgian Dubbel with notes of dark fruit, caramel, and a touch of spice. This devilishly delightful brew is smooth and warming, perfect for savoring slowly.',
         price: { single: '$3.00', six: '$12.50', case: '$45.00' },
-        image: './assets/images/devil_can_a.png',
+        image: './assets/images/devil_can_a.webp',
         id: '106'
     },
     {
@@ -59,7 +59,7 @@ const beerList = [
         abv: '4.5%',
         description: 'Light and refreshing, this Blonde Ale features a subtle malt sweetness and a crisp, clean finish. An easy-drinking beer for any time of the day.',
         price: { single: '$3.00', six: '$12.50', case: '$45.00' },
-        image: './assets/images/can_b.png',
+        image: './assets/images/can_b.webp',
         id: '107'
     },
     {
@@ -68,7 +68,7 @@ const beerList = [
         abv: '6.2%',
         description: 'A New England IPA with a hazy appearance and juicy tropical fruit flavors. Soft on the palate with a smooth, creamy finish.',
         price: { single: '$3.00', six: '$12.50', case: '$45.00' },
-        image: './assets/images/badseas.png',
+        image: './assets/images/badseas.webp',
         id: '108'
     },
     {
@@ -77,7 +77,7 @@ const beerList = [
         abv: '4.5%',
         description: 'Crisp and refreshing, this Japanese Rice Lager offers a delicate balance of subtle malt sweetness and a clean, smooth finish. Perfect for moments of tranquility and relaxation.',
         price: { single: '$3.00', six: '$12.50', case: '$45.00' },
-        image: './assets/images/zenjoy.png',
+        image: './assets/images/zenjoy.webp',
         id: '109'
     },
     {
@@ -86,7 +86,7 @@ const beerList = [
         abv: '5.4%',
         description: 'This Amber Ale offers a perfect balance of caramel malt sweetness and a hint of bitterness. A well-rounded beer with a rich, amber hue.',
         price: { single: '$3.00', six: '$12.50', case: '$45.00' },
-        image: './assets/images/frogue_a.png',
+        image: './assets/images/frogue_a.webp',
         id: '110'
     },
     {
@@ -95,7 +95,7 @@ const beerList = [
         abv: '5.3%',
         description: 'A refreshing Wheat Beer with bright citrus notes and a hint of spice. Perfect for warm days and relaxing moments.',
         price: { single: '$3.00', six: '$12.50', case: '$45.00' },
-        image: './assets/images/three_cans_b.png',
+        image: './assets/images/three_cans_b.webp',
         id: '111'
     },
 ];

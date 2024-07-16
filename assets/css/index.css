@@ -4,8 +4,8 @@
     font-size: 18px;
 	--main-a: #32ca00;
 	--main-b: #313131;
-	--main-c: #dcb000;
-	--main-d: #808080;
+	--main-c: #EBBC00;
+	--main-d: #BFBFBF;
 	--main-e: #d7f6ff;
 	--main-e-rgb:  215, 246, 255;
 }
@@ -14,10 +14,11 @@
 	font-family: 'Lato';
 	src: url('/assets/fonts/Lato-Regular.ttf') format('truetype');
 }
-  @font-face {
+
+@font-face {
 	font-family: 'LatoBold';
 	src: url('/assets/fonts/Lato-Bold.ttf') format('truetype');
-  }
+}
 
 *,
 *::before,
@@ -126,7 +127,7 @@ label::after {
 	border: 1px solid var(--main-a);
 }
 
-button.border-a:focus {
+.border-a:hover, .border-a:focus {
 	color: var(--main-b);
 	border: 1px solid var(--main-a);
 	background-color: var(--main-a);
@@ -218,15 +219,15 @@ a.btn.bg-c:hover {
 }
 
 .bg-home {
-	background-image: url('../images/friends_drinks_a.png');
+	background-image: url('../images/friends_drinks_a.webp');
 }
 
 .bg-events {
-	background-image: url('../images/band_stage_a.png');
+	background-image: url('../images/band_stage_a.webp');
 }
 
 .bg-products {
-	background-image: url('../images/pint_formation_a.png');
+	background-image: url('../images/pint_formation_a.webp');
 }
 
 .parallax {

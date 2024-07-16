@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const fadeElements = document.querySelectorAll('.fade-in');
     fadeElements.forEach(el => observer.observe(el));
-});
+    // });
 
 
-document.addEventListener('DOMContentLoaded', function () {
+    // document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('click', function (event) {
         const navbar = document.querySelector('.navbar');
         const isClickInside = navbar.contains(event.target);
@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
             navbarToggler.click();
         }
     });
-});
+    // });
 
-document.addEventListener('DOMContentLoaded', () => {
+    // document.addEventListener('DOMContentLoaded', () => {
     const sizeButtons = document.querySelectorAll('.size');
     sizeButtons.forEach(div => {
         div.addEventListener('click', function () {
@@ -34,11 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
             this.classList.add('selected');
         });
     });
+    highlightDay()
 })
 
-document.addEventListener('DOMContentLoaded', () => {
+const highlightDay = () => {
     const newDate = new Date();
-    const currentDay = newDate.getDay() - 1;
+    const currentDay = newDate.getDay();
     const weekdayDivs = document.querySelectorAll('.weekDay');
     weekdayDivs[currentDay].classList.add('highlight')
-})
+}
