@@ -1,12 +1,13 @@
 import beerList from './beerList.js';
 
+// working on getting the inputs from the modals working
 
 document.addEventListener('DOMContentLoaded', function () {
-    const incrementQty = () => {
-        console.log("beerProducts")
-        const inputQty = document.querySelectorAll('input')
-        console.log(inputQty)
-    }
+    // const incrementQty = () => {
+    //     console.log('clicked')
+    //     const inputQty = document.getElementById(`${beer.id}`)
+    //     console.log(inputQty)
+    // }
     // const incrementBtn = document.getElementById('')
     // const addButton = document.querySelectorAll('.addButton');
     // document.querySelectorAll('button.border-a').forEach(button => {
@@ -58,17 +59,17 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <div class="size col btn bg-b text-c border-c text-nowrap">24-Pack</div>
                             </div>
                             <div class="row justify-content-center">
-                                <button class="btn bg-c rounded-circle w-auto decrement">
+                                <button class="col-4 btn bg-c rounded-circle w-auto decrement">
                                     <i class="fas fa-minus"></i>
                                 </button>
                                 <label class="visually-hidden form-check-label" for="b${beer.id}">Quantity</label>
-                                <input id="b${beer.id}" data-id=${beer.id} type="number" value="1" min="1" max="100" class="w-auto text-center mx-3">
-                                <button class="btn bg-c rounded-circle w-auto increment" onclick="incrementQty()">
+                                <input id="b${beer.id}" data-id=${beer.id} type="text" value="1" class="col-4 text-center mx-3">
+                                <button class="btn bg-c rounded-circle w-auto increment">
                                     <i class="fas fa-plus"></i>
                                 </button>
                             </div>
                             <div class="row justify-content-center">
-                                <a href="#" class="btn bg-c rounded-pill p-sm-3 px-sm-5 mx-auto mt-3 w-auto">Add to Cart</a>
+                                <a href="#" class="col-4 btn bg-c rounded-pill p-sm-3 px-sm-5 mx-auto mt-3 w-auto">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -86,8 +87,5 @@ document.addEventListener('DOMContentLoaded', function () {
         productUl.append(placeholderDiv)
         productUl.append(placeholderDiv)
     }
-
-    console.log('Products list:', productUl);
-    console.log('Products container:', productsDiv);
 })
 
